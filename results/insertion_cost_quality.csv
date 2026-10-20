@@ -1,0 +1,10 @@
+n,methode,appels_moyens,rang_moyen,P_meilleure,P_top3
+20,"minimum quantique cq=0,5",5.83495,2.8709,0.34055,0.6895
+20,jumeau par tirages cq=1,11.4507,0.83315,0.56345,0.89915
+20,balayage classique,20.0,0.0,1.0,1.0
+50,"minimum quantique cq=0,5",11.01285,3.8678,0.34085,0.68975
+50,jumeau par tirages cq=1,15.1518,2.46195,0.30225,0.6449
+50,balayage classique,50.0,0.0,1.0,1.0
+100,"minimum quantique cq=0,5",13.90235,5.89985,0.25305,0.56715
+100,jumeau par tirages cq=1,22.28365,3.75785,0.22935,0.525
+100,balayage classique,100.0,0.0,1.0,1.0

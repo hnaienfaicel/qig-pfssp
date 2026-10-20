@@ -1,0 +1,30 @@
+[
+ {
+  "nom": "IG"
+ },
+ {
+  "nom": "Q-IG-min",
+  "cq_min": 0.5
+ },
+ {
+  "nom": "IG-R",
+  "ls": "rls",
+  "cq_ls": 6
+ },
+ {
+  "nom": "Q-IG-G",
+  "cq_min": 2,
+  "ls": "gls",
+  "cq_ls": 1
+ },
+ {
+  "nom": "IG-Rmin",
+  "rmin": 1
+ },
+ {
+  "nom": "IG-RR",
+  "rmin": 3,
+  "ls": "rls",
+  "cq_ls": 6
+ }
+]

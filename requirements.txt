@@ -1,0 +1,8 @@
+numpy>=1.26
+numba>=0.59
+pandas>=2.0
+scipy>=1.11
+matplotlib>=3.8
+# circuits/ only
+qiskit==2.5.2
+qiskit-aer==0.17.2

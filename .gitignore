@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.spl
+results/raw/*.done
+.DS_Store
+results/raw_long/*.done
+paper/
+figures/*.pdf
+figures/*.png

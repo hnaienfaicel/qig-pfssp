@@ -98,3 +98,14 @@ IG-RR choisit (2 ; 10), soit 1,371, au bord de ses deux axes. J'étends sa grill
 - **Référence des écarts.** Le pré-enregistrement calculait les écarts avec les bornes supérieures livrées avec les instances (fichiers de Taillard, fichier de Vallada et al. 2015). Elles sont dépassées pour 64 des 160 instances (jusqu'à 1,98 %). Les écarts sont désormais calculés contre les meilleures solutions connues de Brunner (2026, Zenodo 20529962, v10), recalculées sur nos fichiers (160 sur 160 identiques).
 - **Effet.** Seuls les niveaux changent. Chaque différence appariée bouge de moins de 0,01 point, aucune conclusion de test ne change et le réglage retient les mêmes paramètres. Les résultats contre les bornes d'origine sont conservés (`results/tests_instance_file_bounds.csv`, `results/levels_instance_file_bounds.csv`).
 - **Hors pré-enregistrement.** Les exécutions à budget ×10, ×100 et ×1000 (`experiments/run_long.py`, `run_record.py`, `analyse_long.py`) sont exploratoires.
+
+## Amendement 4 (21 octobre 2026, 07:39 UTC, avant toute exécution sur EXT)
+
+- **Jeu de réplication EXT.** 190 instances jamais utilisées : toutes les instances Taillard avec n ≤ 100 et toutes les instances VRF Small (Vallada et al. 2015) qui ne sont ni dans TEST, ni dans HARD, ni dans TUNE+. Cela fait 5 Taillard (tai50_10 n° 5–9) et 185 VRF Small (n = 10 à 60, m = 5 à 20). La liste figure dans `data/instances.csv` (set = EXT). Les meilleures solutions connues (Brunner 2026, v10) ont été recalculées à partir de leurs permutations (190 sur 190 identiques).
+- **Protocole figé.** Mêmes bras et réglages (`experiments/arms.json`), 46 080 appels, 30 exécutions, graines 1000 + 7919 r, écart à la meilleure solution connue.
+- **Hypothèses confirmatoires.** H1, H2, H3 (famille primaire) et H1b, H2b (famille secondaire), sur le meilleur des 30 exécutions et sur la moyenne des 30. Test de Wilcoxon apparié par instance, IC bootstrap à 95 %, correction de Holm dans chaque famille, comme pour TEST et HARD.
+- **Analyse descriptive.** Ensemble poolé TEST ∪ HARD ∪ EXT (330 instances) : niveaux et différences par groupe, sans nouveau test confirmatoire.
+- **Études exploratoires, hors confirmatoire.**
+  - Robustesse au bruit : Grover imparfait ; avec une probabilité (1 − ε)^k que les k itérations restent cohérentes, sinon la mesure est uniforme.
+  - Courbes de convergence : meilleur makespan en fonction des appels, mêmes exécutions que TEST et HARD.
+  - Estimation des ressources tolérantes aux fautes.

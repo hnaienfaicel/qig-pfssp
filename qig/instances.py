@@ -5,7 +5,7 @@ import os, numpy as np, pandas as pd
 
 DATA = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data")
 INSTANCES = pd.read_csv(os.path.join(DATA, "instances.csv"))
-SETS = {s: INSTANCES[INSTANCES.set == s].instance.tolist() for s in ("TEST", "HARD", "TUNE+")}
+SETS = {s: INSTANCES[INSTANCES.set == s].instance.tolist() for s in ("TEST", "HARD", "TUNE+", "EXT")}
 UB = dict(zip(INSTANCES.instance, INSTANCES.ub))
 
 def gap_vs_bks(df):

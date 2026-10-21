@@ -1,161 +1,351 @@
 set,instance,bks_name,n,m,ub,optimal,lb,ub_source,ub_instance_file,ub_instance_file_source,psum,p_hash
-TEST,VFR100_20_1,VFR100_20_1,100,20,6116,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6121,Vallada et al. 2015 UB file,98973,100262983
-TEST,VFR100_20_10,VFR100_20_10,100,20,6075,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6084,Vallada et al. 2015 UB file,97417,99438647
-TEST,VFR100_20_2,VFR100_20_2,100,20,6217,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6224,Vallada et al. 2015 UB file,100861,101088808
-TEST,VFR100_20_3,VFR100_20_3,100,20,6147,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6157,Vallada et al. 2015 UB file,99882,99819869
-TEST,VFR100_20_4,VFR100_20_4,100,20,6167,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6173,Vallada et al. 2015 UB file,99666,99844013
-TEST,VFR100_20_5,VFR100_20_5,100,20,6210,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6221,Vallada et al. 2015 UB file,100294,100299641
-TEST,VFR100_20_6,VFR100_20_6,100,20,6240,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6247,Vallada et al. 2015 UB file,100224,99727389
-TEST,VFR100_20_7,VFR100_20_7,100,20,6354,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6358,Vallada et al. 2015 UB file,102620,103756371
-TEST,VFR100_20_8,VFR100_20_8,100,20,6016,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6023,Vallada et al. 2015 UB file,97744,98822304
-TEST,VFR100_20_9,VFR100_20_9,100,20,6274,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6286,Vallada et al. 2015 UB file,100575,101035773
-TEST,VFR10_10_1,VFR10_10_1,10,10,1097,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1097,Vallada et al. 2015 UB file,4776,279930
-TEST,VFR10_10_10,VFR10_10_10,10,10,1099,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1099,Vallada et al. 2015 UB file,4677,257602
-TEST,VFR10_10_2,VFR10_10_2,10,10,1146,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1146,Vallada et al. 2015 UB file,4710,270313
-TEST,VFR10_10_3,VFR10_10_3,10,10,1124,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1124,Vallada et al. 2015 UB file,4791,275756
-TEST,VFR10_10_4,VFR10_10_4,10,10,1038,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1038,Vallada et al. 2015 UB file,4529,230753
-TEST,VFR10_10_5,VFR10_10_5,10,10,1093,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1093,Vallada et al. 2015 UB file,4899,262429
-TEST,VFR10_10_6,VFR10_10_6,10,10,1085,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1085,Vallada et al. 2015 UB file,4624,269270
-TEST,VFR10_10_7,VFR10_10_7,10,10,1115,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1115,Vallada et al. 2015 UB file,4733,277366
-TEST,VFR10_10_8,VFR10_10_8,10,10,1113,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1113,Vallada et al. 2015 UB file,4851,296005
-TEST,VFR10_10_9,VFR10_10_9,10,10,1045,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1045,Vallada et al. 2015 UB file,4675,271049
-TEST,VFR20_5_1,VFR20_5_1,20,5,1192,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1192,Vallada et al. 2015 UB file,4853,256529
-TEST,VFR20_5_10,VFR20_5_10,20,5,1243,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1243,Vallada et al. 2015 UB file,5294,291579
-TEST,VFR20_5_2,VFR20_5_2,20,5,1275,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1275,Vallada et al. 2015 UB file,5262,298421
-TEST,VFR20_5_3,VFR20_5_3,20,5,1323,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1323,Vallada et al. 2015 UB file,5298,303905
-TEST,VFR20_5_4,VFR20_5_4,20,5,1127,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1127,Vallada et al. 2015 UB file,4713,256313
-TEST,VFR20_5_5,VFR20_5_5,20,5,1339,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1339,Vallada et al. 2015 UB file,5394,302962
-TEST,VFR20_5_6,VFR20_5_6,20,5,1066,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1066,Vallada et al. 2015 UB file,4647,260366
-TEST,VFR20_5_7,VFR20_5_7,20,5,1154,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1154,Vallada et al. 2015 UB file,4897,284641
-TEST,VFR20_5_8,VFR20_5_8,20,5,1102,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1102,Vallada et al. 2015 UB file,4732,266566
-TEST,VFR20_5_9,VFR20_5_9,20,5,1317,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1317,Vallada et al. 2015 UB file,5109,288669
-TEST,VFR50_15_1,VFR50_15_1,50,15,3305,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3305,Vallada et al. 2015 UB file,36632,14028081
-TEST,VFR50_15_10,VFR50_15_10,50,15,3394,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3397,Vallada et al. 2015 UB file,37789,14328585
-TEST,VFR50_15_2,VFR50_15_2,50,15,3342,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3342,Vallada et al. 2015 UB file,36862,13912157
-TEST,VFR50_15_3,VFR50_15_3,50,15,3293,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3293,Vallada et al. 2015 UB file,37090,13963180
-TEST,VFR50_15_4,VFR50_15_4,50,15,3510,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3510,Vallada et al. 2015 UB file,39575,15006526
-TEST,VFR50_15_5,VFR50_15_5,50,15,3332,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3332,Vallada et al. 2015 UB file,37372,13939019
-TEST,VFR50_15_6,VFR50_15_6,50,15,3341,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3341,Vallada et al. 2015 UB file,37845,14428419
-TEST,VFR50_15_7,VFR50_15_7,50,15,3475,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3475,Vallada et al. 2015 UB file,38921,15017939
-TEST,VFR50_15_8,VFR50_15_8,50,15,3420,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3420,Vallada et al. 2015 UB file,38477,14642047
-TEST,VFR50_15_9,VFR50_15_9,50,15,3194,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3194,Vallada et al. 2015 UB file,35680,13575505
-TEST,VFR50_5_1,VFR50_5_1,50,5,3055,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3055,Vallada et al. 2015 UB file,13656,1782944
-TEST,VFR50_5_10,VFR50_5_10,50,5,2834,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2834,Vallada et al. 2015 UB file,12983,1728314
-TEST,VFR50_5_2,VFR50_5_2,50,5,2853,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2853,Vallada et al. 2015 UB file,12549,1633818
-TEST,VFR50_5_3,VFR50_5_3,50,5,2746,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2746,Vallada et al. 2015 UB file,12343,1568898
-TEST,VFR50_5_4,VFR50_5_4,50,5,2836,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2836,Vallada et al. 2015 UB file,13017,1674214
-TEST,VFR50_5_5,VFR50_5_5,50,5,2866,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2866,Vallada et al. 2015 UB file,12751,1708247
-TEST,VFR50_5_6,VFR50_5_6,50,5,2841,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2841,Vallada et al. 2015 UB file,12349,1618144
-TEST,VFR50_5_7,VFR50_5_7,50,5,2600,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2600,Vallada et al. 2015 UB file,11847,1600839
-TEST,VFR50_5_8,VFR50_5_8,50,5,2684,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2684,Vallada et al. 2015 UB file,12202,1594982
-TEST,VFR50_5_9,VFR50_5_9,50,5,2621,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2621,Vallada et al. 2015 UB file,11801,1546813
-TEST,tai100_10_0,Ta071,100,10,5770,1,5770.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5770,Taillard instance file,51911,26218941
-TEST,tai100_10_1,Ta072,100,10,5349,1,5349.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5349,Taillard instance file,48435,24925666
-TEST,tai100_10_2,Ta073,100,10,5676,1,5676.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5677,Taillard instance file,50197,25285654
-TEST,tai100_10_3,Ta074,100,10,5781,1,5781.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5791,Taillard instance file,52638,26501540
-TEST,tai100_10_4,Ta075,100,10,5467,1,5467.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5468,Taillard instance file,49703,24691224
-TEST,tai100_10_5,Ta076,100,10,5303,1,5303.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5303,Taillard instance file,47457,24427791
-TEST,tai100_10_6,Ta077,100,10,5595,1,5595.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5599,Taillard instance file,49030,25404382
-TEST,tai100_10_7,Ta078,100,10,5617,1,5617.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5623,Taillard instance file,49851,25048224
-TEST,tai100_10_8,Ta079,100,10,5871,1,5871.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5875,Taillard instance file,51396,25708374
-TEST,tai100_10_9,Ta080,100,10,5845,1,5845.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5845,Taillard instance file,50980,25621614
-TEST,tai100_5_0,Ta061,100,5,5493,1,5493.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5493,Taillard instance file,25797,6661999
-TEST,tai100_5_1,Ta062,100,5,5268,1,5268.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5268,Taillard instance file,25182,6310418
-TEST,tai100_5_2,Ta063,100,5,5175,1,5175.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5175,Taillard instance file,24735,6457062
-TEST,tai100_5_3,Ta064,100,5,5014,1,5014.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5014,Taillard instance file,24028,6040247
-TEST,tai100_5_4,Ta065,100,5,5250,1,5250.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5250,Taillard instance file,25098,6375694
-TEST,tai100_5_5,Ta066,100,5,5135,1,5135.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5135,Taillard instance file,24510,6298029
-TEST,tai100_5_6,Ta067,100,5,5246,1,5246.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5246,Taillard instance file,24749,6467088
-TEST,tai100_5_7,Ta068,100,5,5094,1,5094.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5106,Taillard instance file,24339,6260204
-TEST,tai100_5_8,Ta069,100,5,5448,1,5448.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5454,Taillard instance file,25839,6684147
-TEST,tai100_5_9,Ta070,100,5,5322,1,5322.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5328,Taillard instance file,25583,6641712
-TEST,tai20_10_0,Ta011,20,10,1582,1,1582.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1582,Taillard instance file,10329,1117004
-TEST,tai20_10_1,Ta012,20,10,1659,1,1659.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1659,Taillard instance file,10858,1134682
-TEST,tai20_10_2,Ta013,20,10,1496,1,1496.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1496,Taillard instance file,9876,1084188
-TEST,tai20_10_3,Ta014,20,10,1377,1,1377.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1378,Taillard instance file,8930,941206
-TEST,tai20_10_4,Ta015,20,10,1419,1,1419.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1419,Taillard instance file,9459,994652
-TEST,tai20_10_5,Ta016,20,10,1397,1,1397.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1397,Taillard instance file,9140,945901
-TEST,tai20_10_6,Ta017,20,10,1484,1,1484.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1484,Taillard instance file,9377,1008147
-TEST,tai20_10_7,Ta018,20,10,1538,1,1538.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1538,Taillard instance file,9902,1054853
-TEST,tai20_10_8,Ta019,20,10,1593,1,1593.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1593,Taillard instance file,10034,1087765
-TEST,tai20_10_9,Ta020,20,10,1591,1,1591.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1591,Taillard instance file,10528,1107101
-TEST,tai20_5_0,Ta001,20,5,1278,1,1278.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1278,Taillard instance file,5153,288799
-TEST,tai20_5_1,Ta002,20,5,1359,1,1359.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1359,Taillard instance file,5196,285808
-TEST,tai20_5_2,Ta003,20,5,1081,1,1081.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1081,Taillard instance file,4605,264314
-TEST,tai20_5_3,Ta004,20,5,1293,1,1293.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1293,Taillard instance file,5636,306000
-TEST,tai20_5_4,Ta005,20,5,1235,1,1235.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1236,Taillard instance file,4968,287244
-TEST,tai20_5_5,Ta006,20,5,1195,1,1195.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1195,Taillard instance file,5055,294601
-TEST,tai20_5_6,Ta007,20,5,1234,1,1234.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1239,Taillard instance file,4948,274030
-TEST,tai20_5_7,Ta008,20,5,1206,1,1206.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1206,Taillard instance file,5231,308841
-TEST,tai20_5_8,Ta009,20,5,1230,1,1230.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1230,Taillard instance file,5242,300754
-TEST,tai20_5_9,Ta010,20,5,1108,1,1108.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1108,Taillard instance file,4777,260103
-TEST,tai50_5_0,Ta031,50,5,2724,1,2724.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2724,Taillard instance file,12077,1562791
-TEST,tai50_5_1,Ta032,50,5,2834,1,2834.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2834,Taillard instance file,13049,1706289
-TEST,tai50_5_2,Ta033,50,5,2621,1,2621.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2621,Taillard instance file,11990,1638678
-TEST,tai50_5_3,Ta034,50,5,2751,1,2751.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2751,Taillard instance file,12823,1650844
-TEST,tai50_5_4,Ta035,50,5,2863,1,2863.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2863,Taillard instance file,12726,1636229
-TEST,tai50_5_5,Ta036,50,5,2829,1,2829.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2829,Taillard instance file,13004,1700615
-TEST,tai50_5_6,Ta037,50,5,2725,1,2725.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2725,Taillard instance file,12324,1617482
-TEST,tai50_5_7,Ta038,50,5,2683,1,2683.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2683,Taillard instance file,12393,1655204
-TEST,tai50_5_8,Ta039,50,5,2552,1,2552.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2552,Taillard instance file,11622,1576636
-TEST,tai50_5_9,Ta040,50,5,2782,1,2782.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2782,Taillard instance file,12818,1650496
-HARD,tai20_20_5,Ta026,20,20,2226,1,2226.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2226,Taillard instance file,19701,4082079
-HARD,tai20_20_6,Ta027,20,20,2273,1,2273.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2273,Taillard instance file,20096,4131531
-HARD,tai20_20_7,Ta028,20,20,2200,1,2200.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2200,Taillard instance file,19757,4133904
-HARD,tai20_20_8,Ta029,20,20,2237,1,2237.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2237,Taillard instance file,20201,4237582
-HARD,tai20_20_9,Ta030,20,20,2178,1,2178.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2178,Taillard instance file,19338,4060378
-HARD,tai50_20_5,Ta056,50,20,3679,1,3679.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3698,Taillard instance file,49030,25402642
-HARD,tai50_20_6,Ta057,50,20,3704,1,3704.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3716,Taillard instance file,49673,25206883
-HARD,tai50_20_7,Ta058,50,20,3691,1,3691.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3709,Taillard instance file,49249,24815783
-HARD,tai50_20_8,Ta059,50,20,3741,0,3645.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3765,Taillard instance file,49943,25233237
-HARD,tai50_20_9,Ta060,50,20,3755,0,3696.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3777,Taillard instance file,50602,25922829
-HARD,tai100_20_5,Ta086,100,20,6329,0,6311.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6437,Taillard instance file,99300,100402970
-HARD,tai100_20_6,Ta087,100,20,6223,0,6216.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6346,Taillard instance file,100097,99706427
-HARD,tai100_20_7,Ta088,100,20,6357,0,6316.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6481,Taillard instance file,101843,104131190
-HARD,tai100_20_8,Ta089,100,20,6246,0,6232.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6358,Taillard instance file,99964,101206783
-HARD,tai100_20_9,Ta090,100,20,6404,1,6404.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6465,Taillard instance file,100664,101244262
-HARD,VFR20_20_1,VFR20_20_1,20,20,2270,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2270,Vallada et al. 2015 UB file,19780,4072398
-HARD,VFR20_20_2,VFR20_20_2,20,20,2170,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2170,Vallada et al. 2015 UB file,19573,4066742
-HARD,VFR20_20_3,VFR20_20_3,20,20,2277,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2277,Vallada et al. 2015 UB file,19864,4223867
-HARD,VFR20_20_4,VFR20_20_4,20,20,2165,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2165,Vallada et al. 2015 UB file,19380,3881044
-HARD,VFR20_20_5,VFR20_20_5,20,20,2225,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2225,Vallada et al. 2015 UB file,19893,4118791
-HARD,VFR40_20_1,VFR40_20_1,40,20,3317,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3317,Vallada et al. 2015 UB file,39749,16145122
-HARD,VFR40_20_2,VFR40_20_2,40,20,3224,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3224,Vallada et al. 2015 UB file,39611,15863543
-HARD,VFR40_20_3,VFR40_20_3,40,20,3224,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3224,Vallada et al. 2015 UB file,39992,16569582
-HARD,VFR40_20_4,VFR40_20_4,40,20,3227,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3227,Vallada et al. 2015 UB file,40243,16406341
-HARD,VFR40_20_5,VFR40_20_5,40,20,3050,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3050,Vallada et al. 2015 UB file,38028,15953342
-HARD,VFR60_20_1,VFR60_20_1,60,20,4146,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",4147,Vallada et al. 2015 UB file,59752,36369839
-HARD,VFR60_20_2,VFR60_20_2,60,20,4257,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",4274,Vallada et al. 2015 UB file,60474,36755326
-HARD,VFR60_20_3,VFR60_20_3,60,20,4332,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",4341,Vallada et al. 2015 UB file,61159,36717667
-HARD,VFR60_20_4,VFR60_20_4,60,20,4168,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",4175,Vallada et al. 2015 UB file,59734,35916938
-HARD,VFR60_20_5,VFR60_20_5,60,20,4172,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",4180,Vallada et al. 2015 UB file,59396,35527821
-HARD,VFR100_40_1,VFR100_40_1,100,40,7783,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",7933,Vallada et al. 2015 UB file,198154,398466595
-HARD,VFR100_40_2,VFR100_40_2,100,40,7905,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",8004,Vallada et al. 2015 UB file,202866,406415917
-HARD,VFR100_40_3,VFR100_40_3,100,40,7838,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",7909,Vallada et al. 2015 UB file,198174,397574949
-HARD,VFR100_40_4,VFR100_40_4,100,40,7866,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",7942,Vallada et al. 2015 UB file,200486,398866291
-HARD,VFR100_40_5,VFR100_40_5,100,40,7916,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",8004,Vallada et al. 2015 UB file,202275,402988392
-HARD,VFR100_60_1,VFR100_60_1,100,60,9287,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",9353,Vallada et al. 2015 UB file,294197,874663598
-HARD,VFR100_60_2,VFR100_60_2,100,60,9493,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",9567,Vallada et al. 2015 UB file,301138,901964266
-HARD,VFR100_60_3,VFR100_60_3,100,60,9270,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",9349,Vallada et al. 2015 UB file,295548,884700714
-HARD,VFR100_60_4,VFR100_60_4,100,60,9330,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",9403,Vallada et al. 2015 UB file,298862,897656548
-HARD,VFR100_60_5,VFR100_60_5,100,60,9345,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",9431,Vallada et al. 2015 UB file,297752,896439948
-TUNE+,tai20_20_0,Ta021,20,20,2297,1,2297.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2297,Taillard instance file,20273,4200934
-TUNE+,tai20_20_1,Ta022,20,20,2099,1,2099.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2100,Taillard instance file,18772,3854717
-TUNE+,tai20_20_2,Ta023,20,20,2326,1,2326.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2326,Taillard instance file,20323,4251422
-TUNE+,tai20_20_3,Ta024,20,20,2223,1,2223.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2223,Taillard instance file,19734,4063569
-TUNE+,tai20_20_4,Ta025,20,20,2291,1,2291.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2291,Taillard instance file,20467,4089996
-TUNE+,tai50_10_0,Ta041,50,10,2991,1,2991.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3025,Taillard instance file,25100,6301153
-TUNE+,tai50_10_1,Ta042,50,10,2867,1,2867.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2892,Taillard instance file,24236,6107913
-TUNE+,tai50_10_2,Ta043,50,10,2839,1,2839.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2864,Taillard instance file,24007,6349266
-TUNE+,tai50_10_3,Ta044,50,10,3063,1,3063.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3064,Taillard instance file,25281,6537267
-TUNE+,tai50_10_4,Ta045,50,10,2976,1,2976.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2986,Taillard instance file,25391,6454455
-TUNE+,tai50_20_0,Ta051,50,20,3846,0,3771.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3875,Taillard instance file,51911,26027578
-TUNE+,tai50_20_1,Ta052,50,20,3699,1,3699.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3715,Taillard instance file,49271,24480528
-TUNE+,tai50_20_2,Ta053,50,20,3640,1,3640.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3668,Taillard instance file,48435,25141682
-TUNE+,tai50_20_3,Ta054,50,20,3719,0,3635.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3752,Taillard instance file,49300,25000284
-TUNE+,tai50_20_4,Ta055,50,20,3610,0,3553.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3635,Taillard instance file,49141,24688567
-TUNE+,tai100_20_0,Ta081,100,20,6171,0,6134.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6286,Taillard instance file,98766,99295273
-TUNE+,tai100_20_1,Ta082,100,20,6183,1,6183.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6241,Taillard instance file,99848,99596277
-TUNE+,tai100_20_2,Ta083,100,20,6252,1,6252.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6329,Taillard instance file,99207,98335366
-TUNE+,tai100_20_3,Ta084,100,20,6254,1,6254.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6306,Taillard instance file,98548,99254320
-TUNE+,tai100_20_4,Ta085,100,20,6279,0,6270.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6377,Taillard instance file,99239,100107572
+TEST,VFR100_20_1,VFR100_20_1,100,20,6116,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6121.0,Vallada et al. 2015 UB file,98973,100262983
+TEST,VFR100_20_10,VFR100_20_10,100,20,6075,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6084.0,Vallada et al. 2015 UB file,97417,99438647
+TEST,VFR100_20_2,VFR100_20_2,100,20,6217,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6224.0,Vallada et al. 2015 UB file,100861,101088808
+TEST,VFR100_20_3,VFR100_20_3,100,20,6147,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6157.0,Vallada et al. 2015 UB file,99882,99819869
+TEST,VFR100_20_4,VFR100_20_4,100,20,6167,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6173.0,Vallada et al. 2015 UB file,99666,99844013
+TEST,VFR100_20_5,VFR100_20_5,100,20,6210,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6221.0,Vallada et al. 2015 UB file,100294,100299641
+TEST,VFR100_20_6,VFR100_20_6,100,20,6240,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6247.0,Vallada et al. 2015 UB file,100224,99727389
+TEST,VFR100_20_7,VFR100_20_7,100,20,6354,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6358.0,Vallada et al. 2015 UB file,102620,103756371
+TEST,VFR100_20_8,VFR100_20_8,100,20,6016,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6023.0,Vallada et al. 2015 UB file,97744,98822304
+TEST,VFR100_20_9,VFR100_20_9,100,20,6274,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6286.0,Vallada et al. 2015 UB file,100575,101035773
+TEST,VFR10_10_1,VFR10_10_1,10,10,1097,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1097.0,Vallada et al. 2015 UB file,4776,279930
+TEST,VFR10_10_10,VFR10_10_10,10,10,1099,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1099.0,Vallada et al. 2015 UB file,4677,257602
+TEST,VFR10_10_2,VFR10_10_2,10,10,1146,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1146.0,Vallada et al. 2015 UB file,4710,270313
+TEST,VFR10_10_3,VFR10_10_3,10,10,1124,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1124.0,Vallada et al. 2015 UB file,4791,275756
+TEST,VFR10_10_4,VFR10_10_4,10,10,1038,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1038.0,Vallada et al. 2015 UB file,4529,230753
+TEST,VFR10_10_5,VFR10_10_5,10,10,1093,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1093.0,Vallada et al. 2015 UB file,4899,262429
+TEST,VFR10_10_6,VFR10_10_6,10,10,1085,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1085.0,Vallada et al. 2015 UB file,4624,269270
+TEST,VFR10_10_7,VFR10_10_7,10,10,1115,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1115.0,Vallada et al. 2015 UB file,4733,277366
+TEST,VFR10_10_8,VFR10_10_8,10,10,1113,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1113.0,Vallada et al. 2015 UB file,4851,296005
+TEST,VFR10_10_9,VFR10_10_9,10,10,1045,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1045.0,Vallada et al. 2015 UB file,4675,271049
+TEST,VFR20_5_1,VFR20_5_1,20,5,1192,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1192.0,Vallada et al. 2015 UB file,4853,256529
+TEST,VFR20_5_10,VFR20_5_10,20,5,1243,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1243.0,Vallada et al. 2015 UB file,5294,291579
+TEST,VFR20_5_2,VFR20_5_2,20,5,1275,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1275.0,Vallada et al. 2015 UB file,5262,298421
+TEST,VFR20_5_3,VFR20_5_3,20,5,1323,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1323.0,Vallada et al. 2015 UB file,5298,303905
+TEST,VFR20_5_4,VFR20_5_4,20,5,1127,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1127.0,Vallada et al. 2015 UB file,4713,256313
+TEST,VFR20_5_5,VFR20_5_5,20,5,1339,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1339.0,Vallada et al. 2015 UB file,5394,302962
+TEST,VFR20_5_6,VFR20_5_6,20,5,1066,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1066.0,Vallada et al. 2015 UB file,4647,260366
+TEST,VFR20_5_7,VFR20_5_7,20,5,1154,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1154.0,Vallada et al. 2015 UB file,4897,284641
+TEST,VFR20_5_8,VFR20_5_8,20,5,1102,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1102.0,Vallada et al. 2015 UB file,4732,266566
+TEST,VFR20_5_9,VFR20_5_9,20,5,1317,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1317.0,Vallada et al. 2015 UB file,5109,288669
+TEST,VFR50_15_1,VFR50_15_1,50,15,3305,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3305.0,Vallada et al. 2015 UB file,36632,14028081
+TEST,VFR50_15_10,VFR50_15_10,50,15,3394,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3397.0,Vallada et al. 2015 UB file,37789,14328585
+TEST,VFR50_15_2,VFR50_15_2,50,15,3342,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3342.0,Vallada et al. 2015 UB file,36862,13912157
+TEST,VFR50_15_3,VFR50_15_3,50,15,3293,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3293.0,Vallada et al. 2015 UB file,37090,13963180
+TEST,VFR50_15_4,VFR50_15_4,50,15,3510,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3510.0,Vallada et al. 2015 UB file,39575,15006526
+TEST,VFR50_15_5,VFR50_15_5,50,15,3332,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3332.0,Vallada et al. 2015 UB file,37372,13939019
+TEST,VFR50_15_6,VFR50_15_6,50,15,3341,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3341.0,Vallada et al. 2015 UB file,37845,14428419
+TEST,VFR50_15_7,VFR50_15_7,50,15,3475,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3475.0,Vallada et al. 2015 UB file,38921,15017939
+TEST,VFR50_15_8,VFR50_15_8,50,15,3420,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3420.0,Vallada et al. 2015 UB file,38477,14642047
+TEST,VFR50_15_9,VFR50_15_9,50,15,3194,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3194.0,Vallada et al. 2015 UB file,35680,13575505
+TEST,VFR50_5_1,VFR50_5_1,50,5,3055,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3055.0,Vallada et al. 2015 UB file,13656,1782944
+TEST,VFR50_5_10,VFR50_5_10,50,5,2834,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2834.0,Vallada et al. 2015 UB file,12983,1728314
+TEST,VFR50_5_2,VFR50_5_2,50,5,2853,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2853.0,Vallada et al. 2015 UB file,12549,1633818
+TEST,VFR50_5_3,VFR50_5_3,50,5,2746,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2746.0,Vallada et al. 2015 UB file,12343,1568898
+TEST,VFR50_5_4,VFR50_5_4,50,5,2836,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2836.0,Vallada et al. 2015 UB file,13017,1674214
+TEST,VFR50_5_5,VFR50_5_5,50,5,2866,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2866.0,Vallada et al. 2015 UB file,12751,1708247
+TEST,VFR50_5_6,VFR50_5_6,50,5,2841,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2841.0,Vallada et al. 2015 UB file,12349,1618144
+TEST,VFR50_5_7,VFR50_5_7,50,5,2600,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2600.0,Vallada et al. 2015 UB file,11847,1600839
+TEST,VFR50_5_8,VFR50_5_8,50,5,2684,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2684.0,Vallada et al. 2015 UB file,12202,1594982
+TEST,VFR50_5_9,VFR50_5_9,50,5,2621,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2621.0,Vallada et al. 2015 UB file,11801,1546813
+TEST,tai100_10_0,Ta071,100,10,5770,1,5770.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5770.0,Taillard instance file,51911,26218941
+TEST,tai100_10_1,Ta072,100,10,5349,1,5349.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5349.0,Taillard instance file,48435,24925666
+TEST,tai100_10_2,Ta073,100,10,5676,1,5676.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5677.0,Taillard instance file,50197,25285654
+TEST,tai100_10_3,Ta074,100,10,5781,1,5781.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5791.0,Taillard instance file,52638,26501540
+TEST,tai100_10_4,Ta075,100,10,5467,1,5467.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5468.0,Taillard instance file,49703,24691224
+TEST,tai100_10_5,Ta076,100,10,5303,1,5303.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5303.0,Taillard instance file,47457,24427791
+TEST,tai100_10_6,Ta077,100,10,5595,1,5595.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5599.0,Taillard instance file,49030,25404382
+TEST,tai100_10_7,Ta078,100,10,5617,1,5617.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5623.0,Taillard instance file,49851,25048224
+TEST,tai100_10_8,Ta079,100,10,5871,1,5871.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5875.0,Taillard instance file,51396,25708374
+TEST,tai100_10_9,Ta080,100,10,5845,1,5845.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5845.0,Taillard instance file,50980,25621614
+TEST,tai100_5_0,Ta061,100,5,5493,1,5493.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5493.0,Taillard instance file,25797,6661999
+TEST,tai100_5_1,Ta062,100,5,5268,1,5268.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5268.0,Taillard instance file,25182,6310418
+TEST,tai100_5_2,Ta063,100,5,5175,1,5175.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5175.0,Taillard instance file,24735,6457062
+TEST,tai100_5_3,Ta064,100,5,5014,1,5014.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5014.0,Taillard instance file,24028,6040247
+TEST,tai100_5_4,Ta065,100,5,5250,1,5250.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5250.0,Taillard instance file,25098,6375694
+TEST,tai100_5_5,Ta066,100,5,5135,1,5135.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5135.0,Taillard instance file,24510,6298029
+TEST,tai100_5_6,Ta067,100,5,5246,1,5246.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5246.0,Taillard instance file,24749,6467088
+TEST,tai100_5_7,Ta068,100,5,5094,1,5094.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5106.0,Taillard instance file,24339,6260204
+TEST,tai100_5_8,Ta069,100,5,5448,1,5448.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5454.0,Taillard instance file,25839,6684147
+TEST,tai100_5_9,Ta070,100,5,5322,1,5322.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",5328.0,Taillard instance file,25583,6641712
+TEST,tai20_10_0,Ta011,20,10,1582,1,1582.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1582.0,Taillard instance file,10329,1117004
+TEST,tai20_10_1,Ta012,20,10,1659,1,1659.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1659.0,Taillard instance file,10858,1134682
+TEST,tai20_10_2,Ta013,20,10,1496,1,1496.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1496.0,Taillard instance file,9876,1084188
+TEST,tai20_10_3,Ta014,20,10,1377,1,1377.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1378.0,Taillard instance file,8930,941206
+TEST,tai20_10_4,Ta015,20,10,1419,1,1419.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1419.0,Taillard instance file,9459,994652
+TEST,tai20_10_5,Ta016,20,10,1397,1,1397.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1397.0,Taillard instance file,9140,945901
+TEST,tai20_10_6,Ta017,20,10,1484,1,1484.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1484.0,Taillard instance file,9377,1008147
+TEST,tai20_10_7,Ta018,20,10,1538,1,1538.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1538.0,Taillard instance file,9902,1054853
+TEST,tai20_10_8,Ta019,20,10,1593,1,1593.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1593.0,Taillard instance file,10034,1087765
+TEST,tai20_10_9,Ta020,20,10,1591,1,1591.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1591.0,Taillard instance file,10528,1107101
+TEST,tai20_5_0,Ta001,20,5,1278,1,1278.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1278.0,Taillard instance file,5153,288799
+TEST,tai20_5_1,Ta002,20,5,1359,1,1359.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1359.0,Taillard instance file,5196,285808
+TEST,tai20_5_2,Ta003,20,5,1081,1,1081.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1081.0,Taillard instance file,4605,264314
+TEST,tai20_5_3,Ta004,20,5,1293,1,1293.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1293.0,Taillard instance file,5636,306000
+TEST,tai20_5_4,Ta005,20,5,1235,1,1235.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1236.0,Taillard instance file,4968,287244
+TEST,tai20_5_5,Ta006,20,5,1195,1,1195.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1195.0,Taillard instance file,5055,294601
+TEST,tai20_5_6,Ta007,20,5,1234,1,1234.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1239.0,Taillard instance file,4948,274030
+TEST,tai20_5_7,Ta008,20,5,1206,1,1206.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1206.0,Taillard instance file,5231,308841
+TEST,tai20_5_8,Ta009,20,5,1230,1,1230.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1230.0,Taillard instance file,5242,300754
+TEST,tai20_5_9,Ta010,20,5,1108,1,1108.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",1108.0,Taillard instance file,4777,260103
+TEST,tai50_5_0,Ta031,50,5,2724,1,2724.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2724.0,Taillard instance file,12077,1562791
+TEST,tai50_5_1,Ta032,50,5,2834,1,2834.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2834.0,Taillard instance file,13049,1706289
+TEST,tai50_5_2,Ta033,50,5,2621,1,2621.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2621.0,Taillard instance file,11990,1638678
+TEST,tai50_5_3,Ta034,50,5,2751,1,2751.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2751.0,Taillard instance file,12823,1650844
+TEST,tai50_5_4,Ta035,50,5,2863,1,2863.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2863.0,Taillard instance file,12726,1636229
+TEST,tai50_5_5,Ta036,50,5,2829,1,2829.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2829.0,Taillard instance file,13004,1700615
+TEST,tai50_5_6,Ta037,50,5,2725,1,2725.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2725.0,Taillard instance file,12324,1617482
+TEST,tai50_5_7,Ta038,50,5,2683,1,2683.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2683.0,Taillard instance file,12393,1655204
+TEST,tai50_5_8,Ta039,50,5,2552,1,2552.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2552.0,Taillard instance file,11622,1576636
+TEST,tai50_5_9,Ta040,50,5,2782,1,2782.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2782.0,Taillard instance file,12818,1650496
+HARD,tai20_20_5,Ta026,20,20,2226,1,2226.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2226.0,Taillard instance file,19701,4082079
+HARD,tai20_20_6,Ta027,20,20,2273,1,2273.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2273.0,Taillard instance file,20096,4131531
+HARD,tai20_20_7,Ta028,20,20,2200,1,2200.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2200.0,Taillard instance file,19757,4133904
+HARD,tai20_20_8,Ta029,20,20,2237,1,2237.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2237.0,Taillard instance file,20201,4237582
+HARD,tai20_20_9,Ta030,20,20,2178,1,2178.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2178.0,Taillard instance file,19338,4060378
+HARD,tai50_20_5,Ta056,50,20,3679,1,3679.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3698.0,Taillard instance file,49030,25402642
+HARD,tai50_20_6,Ta057,50,20,3704,1,3704.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3716.0,Taillard instance file,49673,25206883
+HARD,tai50_20_7,Ta058,50,20,3691,1,3691.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3709.0,Taillard instance file,49249,24815783
+HARD,tai50_20_8,Ta059,50,20,3741,0,3645.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3765.0,Taillard instance file,49943,25233237
+HARD,tai50_20_9,Ta060,50,20,3755,0,3696.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3777.0,Taillard instance file,50602,25922829
+HARD,tai100_20_5,Ta086,100,20,6329,0,6311.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6437.0,Taillard instance file,99300,100402970
+HARD,tai100_20_6,Ta087,100,20,6223,0,6216.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6346.0,Taillard instance file,100097,99706427
+HARD,tai100_20_7,Ta088,100,20,6357,0,6316.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6481.0,Taillard instance file,101843,104131190
+HARD,tai100_20_8,Ta089,100,20,6246,0,6232.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6358.0,Taillard instance file,99964,101206783
+HARD,tai100_20_9,Ta090,100,20,6404,1,6404.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6465.0,Taillard instance file,100664,101244262
+HARD,VFR20_20_1,VFR20_20_1,20,20,2270,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2270.0,Vallada et al. 2015 UB file,19780,4072398
+HARD,VFR20_20_2,VFR20_20_2,20,20,2170,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2170.0,Vallada et al. 2015 UB file,19573,4066742
+HARD,VFR20_20_3,VFR20_20_3,20,20,2277,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2277.0,Vallada et al. 2015 UB file,19864,4223867
+HARD,VFR20_20_4,VFR20_20_4,20,20,2165,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2165.0,Vallada et al. 2015 UB file,19380,3881044
+HARD,VFR20_20_5,VFR20_20_5,20,20,2225,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2225.0,Vallada et al. 2015 UB file,19893,4118791
+HARD,VFR40_20_1,VFR40_20_1,40,20,3317,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3317.0,Vallada et al. 2015 UB file,39749,16145122
+HARD,VFR40_20_2,VFR40_20_2,40,20,3224,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3224.0,Vallada et al. 2015 UB file,39611,15863543
+HARD,VFR40_20_3,VFR40_20_3,40,20,3224,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3224.0,Vallada et al. 2015 UB file,39992,16569582
+HARD,VFR40_20_4,VFR40_20_4,40,20,3227,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3227.0,Vallada et al. 2015 UB file,40243,16406341
+HARD,VFR40_20_5,VFR40_20_5,40,20,3050,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3050.0,Vallada et al. 2015 UB file,38028,15953342
+HARD,VFR60_20_1,VFR60_20_1,60,20,4146,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",4147.0,Vallada et al. 2015 UB file,59752,36369839
+HARD,VFR60_20_2,VFR60_20_2,60,20,4257,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",4274.0,Vallada et al. 2015 UB file,60474,36755326
+HARD,VFR60_20_3,VFR60_20_3,60,20,4332,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",4341.0,Vallada et al. 2015 UB file,61159,36717667
+HARD,VFR60_20_4,VFR60_20_4,60,20,4168,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",4175.0,Vallada et al. 2015 UB file,59734,35916938
+HARD,VFR60_20_5,VFR60_20_5,60,20,4172,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",4180.0,Vallada et al. 2015 UB file,59396,35527821
+HARD,VFR100_40_1,VFR100_40_1,100,40,7783,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",7933.0,Vallada et al. 2015 UB file,198154,398466595
+HARD,VFR100_40_2,VFR100_40_2,100,40,7905,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",8004.0,Vallada et al. 2015 UB file,202866,406415917
+HARD,VFR100_40_3,VFR100_40_3,100,40,7838,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",7909.0,Vallada et al. 2015 UB file,198174,397574949
+HARD,VFR100_40_4,VFR100_40_4,100,40,7866,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",7942.0,Vallada et al. 2015 UB file,200486,398866291
+HARD,VFR100_40_5,VFR100_40_5,100,40,7916,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",8004.0,Vallada et al. 2015 UB file,202275,402988392
+HARD,VFR100_60_1,VFR100_60_1,100,60,9287,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",9353.0,Vallada et al. 2015 UB file,294197,874663598
+HARD,VFR100_60_2,VFR100_60_2,100,60,9493,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",9567.0,Vallada et al. 2015 UB file,301138,901964266
+HARD,VFR100_60_3,VFR100_60_3,100,60,9270,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",9349.0,Vallada et al. 2015 UB file,295548,884700714
+HARD,VFR100_60_4,VFR100_60_4,100,60,9330,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",9403.0,Vallada et al. 2015 UB file,298862,897656548
+HARD,VFR100_60_5,VFR100_60_5,100,60,9345,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",9431.0,Vallada et al. 2015 UB file,297752,896439948
+TUNE+,tai20_20_0,Ta021,20,20,2297,1,2297.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2297.0,Taillard instance file,20273,4200934
+TUNE+,tai20_20_1,Ta022,20,20,2099,1,2099.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2100.0,Taillard instance file,18772,3854717
+TUNE+,tai20_20_2,Ta023,20,20,2326,1,2326.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2326.0,Taillard instance file,20323,4251422
+TUNE+,tai20_20_3,Ta024,20,20,2223,1,2223.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2223.0,Taillard instance file,19734,4063569
+TUNE+,tai20_20_4,Ta025,20,20,2291,1,2291.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2291.0,Taillard instance file,20467,4089996
+TUNE+,tai50_10_0,Ta041,50,10,2991,1,2991.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3025.0,Taillard instance file,25100,6301153
+TUNE+,tai50_10_1,Ta042,50,10,2867,1,2867.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2892.0,Taillard instance file,24236,6107913
+TUNE+,tai50_10_2,Ta043,50,10,2839,1,2839.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2864.0,Taillard instance file,24007,6349266
+TUNE+,tai50_10_3,Ta044,50,10,3063,1,3063.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3064.0,Taillard instance file,25281,6537267
+TUNE+,tai50_10_4,Ta045,50,10,2976,1,2976.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2986.0,Taillard instance file,25391,6454455
+TUNE+,tai50_20_0,Ta051,50,20,3846,0,3771.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3875.0,Taillard instance file,51911,26027578
+TUNE+,tai50_20_1,Ta052,50,20,3699,1,3699.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3715.0,Taillard instance file,49271,24480528
+TUNE+,tai50_20_2,Ta053,50,20,3640,1,3640.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3668.0,Taillard instance file,48435,25141682
+TUNE+,tai50_20_3,Ta054,50,20,3719,0,3635.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3752.0,Taillard instance file,49300,25000284
+TUNE+,tai50_20_4,Ta055,50,20,3610,0,3553.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3635.0,Taillard instance file,49141,24688567
+TUNE+,tai100_20_0,Ta081,100,20,6171,0,6134.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6286.0,Taillard instance file,98766,99295273
+TUNE+,tai100_20_1,Ta082,100,20,6183,1,6183.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6241.0,Taillard instance file,99848,99596277
+TUNE+,tai100_20_2,Ta083,100,20,6252,1,6252.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6329.0,Taillard instance file,99207,98335366
+TUNE+,tai100_20_3,Ta084,100,20,6254,1,6254.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6306.0,Taillard instance file,98548,99254320
+TUNE+,tai100_20_4,Ta085,100,20,6279,0,6270.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",6377.0,Taillard instance file,99239,100107572
+EXT,tai50_10_5,Ta046,50,10,3006,1,3006.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3006.0,Taillard instance file,25090,6409584
+EXT,tai50_10_6,Ta047,50,10,3093,1,3093.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3107.0,Taillard instance file,25184,6396447
+EXT,tai50_10_7,Ta048,50,10,3037,1,3037.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3039.0,Taillard instance file,24535,6290852
+EXT,tai50_10_8,Ta049,50,10,2897,1,2897.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",2902.0,Taillard instance file,24332,6081412
+EXT,tai50_10_9,Ta050,50,10,3065,1,3065.0,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",3091.0,Taillard instance file,25446,6523053
+EXT,VFR10_15_1,VFR10_15_1,10,15,1307,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,6562,549852
+EXT,VFR10_15_10,VFR10_15_10,10,15,1461,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7684,601321
+EXT,VFR10_15_2,VFR10_15_2,10,15,1399,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7200,569922
+EXT,VFR10_15_3,VFR10_15_3,10,15,1398,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7079,576114
+EXT,VFR10_15_4,VFR10_15_4,10,15,1452,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7201,625368
+EXT,VFR10_15_5,VFR10_15_5,10,15,1373,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7151,565217
+EXT,VFR10_15_6,VFR10_15_6,10,15,1329,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7008,576620
+EXT,VFR10_15_7,VFR10_15_7,10,15,1445,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7006,575540
+EXT,VFR10_15_8,VFR10_15_8,10,15,1443,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7185,598507
+EXT,VFR10_15_9,VFR10_15_9,10,15,1428,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7395,571791
+EXT,VFR10_20_1,VFR10_20_1,10,20,1652,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,9382,972968
+EXT,VFR10_20_10,VFR10_20_10,10,20,1663,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,9568,1055438
+EXT,VFR10_20_2,VFR10_20_2,10,20,1759,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,9746,1021608
+EXT,VFR10_20_3,VFR10_20_3,10,20,1726,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,9475,978763
+EXT,VFR10_20_4,VFR10_20_4,10,20,1678,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,9469,982165
+EXT,VFR10_20_5,VFR10_20_5,10,20,1700,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,9411,1005836
+EXT,VFR10_20_6,VFR10_20_6,10,20,1889,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,10279,1109497
+EXT,VFR10_20_7,VFR10_20_7,10,20,1678,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,9790,1019086
+EXT,VFR10_20_8,VFR10_20_8,10,20,1655,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,9390,1037774
+EXT,VFR10_20_9,VFR10_20_9,10,20,1706,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,9943,1032766
+EXT,VFR10_5_1,VFR10_5_1,10,5,695,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,2052,60746
+EXT,VFR10_5_10,VFR10_5_10,10,5,664,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,2015,65953
+EXT,VFR10_5_2,VFR10_5_2,10,5,698,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,2158,63659
+EXT,VFR10_5_3,VFR10_5_3,10,5,728,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,2296,64727
+EXT,VFR10_5_4,VFR10_5_4,10,5,697,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,2243,74506
+EXT,VFR10_5_5,VFR10_5_5,10,5,713,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,2371,71707
+EXT,VFR10_5_6,VFR10_5_6,10,5,748,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,2466,74615
+EXT,VFR10_5_7,VFR10_5_7,10,5,728,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,2380,72490
+EXT,VFR10_5_8,VFR10_5_8,10,5,683,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,2132,71879
+EXT,VFR10_5_9,VFR10_5_9,10,5,761,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,2678,84481
+EXT,VFR20_10_1,VFR20_10_1,20,10,1532,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,9299,1001473
+EXT,VFR20_10_10,VFR20_10_10,20,10,1489,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,9856,1012899
+EXT,VFR20_10_2,VFR20_10_2,20,10,1525,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,9811,1032372
+EXT,VFR20_10_3,VFR20_10_3,20,10,1592,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,10207,1055430
+EXT,VFR20_10_4,VFR20_10_4,20,10,1442,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,9590,1015091
+EXT,VFR20_10_5,VFR20_10_5,20,10,1604,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,10285,1059145
+EXT,VFR20_10_6,VFR20_10_6,20,10,1576,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,10193,1108428
+EXT,VFR20_10_7,VFR20_10_7,20,10,1591,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,10293,1059138
+EXT,VFR20_10_8,VFR20_10_8,20,10,1574,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,9850,1016438
+EXT,VFR20_10_9,VFR20_10_9,20,10,1530,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,10037,1006812
+EXT,VFR20_15_1,VFR20_15_1,20,15,1936,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,15332,2359413
+EXT,VFR20_15_10,VFR20_15_10,20,15,1861,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,14860,2300867
+EXT,VFR20_15_2,VFR20_15_2,20,15,1905,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,14990,2353760
+EXT,VFR20_15_3,VFR20_15_3,20,15,1798,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,14418,2279428
+EXT,VFR20_15_4,VFR20_15_4,20,15,1813,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,14399,2281373
+EXT,VFR20_15_5,VFR20_15_5,20,15,1875,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,15289,2465381
+EXT,VFR20_15_6,VFR20_15_6,20,15,1960,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,15114,2320002
+EXT,VFR20_15_7,VFR20_15_7,20,15,1933,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,14959,2396761
+EXT,VFR20_15_8,VFR20_15_8,20,15,1822,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,14679,2345971
+EXT,VFR20_15_9,VFR20_15_9,20,15,1940,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,14511,2258150
+EXT,VFR20_20_10,VFR20_20_10,20,20,2199,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,19302,3818350
+EXT,VFR20_20_6,VFR20_20_6,20,20,2291,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,19439,4051615
+EXT,VFR20_20_7,VFR20_20_7,20,20,2282,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,20114,4091905
+EXT,VFR20_20_8,VFR20_20_8,20,20,2178,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,19215,3994581
+EXT,VFR20_20_9,VFR20_20_9,20,20,2354,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,20983,4155038
+EXT,VFR30_10_1,VFR30_10_1,30,10,1943,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,14132,2247565
+EXT,VFR30_10_10,VFR30_10_10,30,10,1912,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,14058,2107158
+EXT,VFR30_10_2,VFR30_10_2,30,10,2098,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,15465,2322085
+EXT,VFR30_10_3,VFR30_10_3,30,10,2077,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,15153,2414851
+EXT,VFR30_10_4,VFR30_10_4,30,10,1945,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,14527,2278913
+EXT,VFR30_10_5,VFR30_10_5,30,10,2023,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,15314,2328556
+EXT,VFR30_10_6,VFR30_10_6,30,10,2043,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,15039,2352995
+EXT,VFR30_10_7,VFR30_10_7,30,10,1967,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,14651,2237665
+EXT,VFR30_10_8,VFR30_10_8,30,10,1896,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,13910,2207788
+EXT,VFR30_10_9,VFR30_10_9,30,10,1908,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,14196,2168156
+EXT,VFR30_15_1,VFR30_15_1,30,15,2378,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,22112,5083529
+EXT,VFR30_15_10,VFR30_15_10,30,15,2385,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,22381,5159946
+EXT,VFR30_15_2,VFR30_15_2,30,15,2317,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,21353,4915371
+EXT,VFR30_15_3,VFR30_15_3,30,15,2304,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,21587,5056900
+EXT,VFR30_15_4,VFR30_15_4,30,15,2444,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,22827,5305387
+EXT,VFR30_15_5,VFR30_15_5,30,15,2421,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,22650,5253108
+EXT,VFR30_15_6,VFR30_15_6,30,15,2306,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,21928,4922221
+EXT,VFR30_15_7,VFR30_15_7,30,15,2316,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,21889,5054821
+EXT,VFR30_15_8,VFR30_15_8,30,15,2366,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,22705,5366763
+EXT,VFR30_15_9,VFR30_15_9,30,15,2259,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,21002,4779045
+EXT,VFR30_20_1,VFR30_20_1,30,20,2643,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,28320,8557625
+EXT,VFR30_20_10,VFR30_20_10,30,20,2805,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,29908,9221781
+EXT,VFR30_20_2,VFR30_20_2,30,20,2835,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,29242,9002783
+EXT,VFR30_20_3,VFR30_20_3,30,20,2783,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,30648,9404860
+EXT,VFR30_20_4,VFR30_20_4,30,20,2680,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,28902,8895426
+EXT,VFR30_20_5,VFR30_20_5,30,20,2672,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,28861,8612326
+EXT,VFR30_20_6,VFR30_20_6,30,20,2715,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,29591,8925085
+EXT,VFR30_20_7,VFR30_20_7,30,20,2712,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,28946,8941216
+EXT,VFR30_20_8,VFR30_20_8,30,20,2812,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,29963,9412149
+EXT,VFR30_20_9,VFR30_20_9,30,20,2795,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,30835,9384746
+EXT,VFR30_5_1,VFR30_5_1,30,5,1805,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7695,624592
+EXT,VFR30_5_10,VFR30_5_10,30,5,1637,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7325,611324
+EXT,VFR30_5_2,VFR30_5_2,30,5,1575,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,6913,560901
+EXT,VFR30_5_3,VFR30_5_3,30,5,1673,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7466,611847
+EXT,VFR30_5_4,VFR30_5_4,30,5,1781,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7631,619745
+EXT,VFR30_5_5,VFR30_5_5,30,5,1707,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7298,594341
+EXT,VFR30_5_6,VFR30_5_6,30,5,1875,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7434,599076
+EXT,VFR30_5_7,VFR30_5_7,30,5,1749,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7085,556421
+EXT,VFR30_5_8,VFR30_5_8,30,5,1706,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7737,609758
+EXT,VFR30_5_9,VFR30_5_9,30,5,1735,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,7475,628067
+EXT,VFR40_10_1,VFR40_10_1,40,10,2477,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,19757,4131653
+EXT,VFR40_10_10,VFR40_10_10,40,10,2478,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,19656,4031034
+EXT,VFR40_10_2,VFR40_10_2,40,10,2431,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,19179,4097752
+EXT,VFR40_10_3,VFR40_10_3,40,10,2400,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,19020,3900338
+EXT,VFR40_10_4,VFR40_10_4,40,10,2468,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,19820,4167263
+EXT,VFR40_10_5,VFR40_10_5,40,10,2420,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,19814,4112629
+EXT,VFR40_10_6,VFR40_10_6,40,10,2541,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,20110,4076654
+EXT,VFR40_10_7,VFR40_10_7,40,10,2498,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,20042,4095756
+EXT,VFR40_10_8,VFR40_10_8,40,10,2488,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,19329,3990226
+EXT,VFR40_10_9,VFR40_10_9,40,10,2411,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,19442,4004129
+EXT,VFR40_15_1,VFR40_15_1,40,15,3004,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,31290,9722893
+EXT,VFR40_15_10,VFR40_15_10,40,15,2940,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,29866,9338811
+EXT,VFR40_15_2,VFR40_15_2,40,15,2816,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,29496,8944125
+EXT,VFR40_15_3,VFR40_15_3,40,15,2904,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,30471,9259882
+EXT,VFR40_15_4,VFR40_15_4,40,15,2915,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,29786,9206411
+EXT,VFR40_15_5,VFR40_15_5,40,15,2941,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,30503,9544758
+EXT,VFR40_15_6,VFR40_15_6,40,15,2804,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,29159,8921992
+EXT,VFR40_15_7,VFR40_15_7,40,15,2863,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,29793,9008270
+EXT,VFR40_15_8,VFR40_15_8,40,15,2896,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,30608,9295955
+EXT,VFR40_15_9,VFR40_15_9,40,15,2705,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,29059,8911795
+EXT,VFR40_20_10,VFR40_20_10,40,20,3115,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,38544,15872082
+EXT,VFR40_20_6,VFR40_20_6,40,20,3184,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,38446,15574789
+EXT,VFR40_20_7,VFR40_20_7,40,20,3244,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,39827,16393909
+EXT,VFR40_20_8,VFR40_20_8,40,20,3261,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,39740,16255718
+EXT,VFR40_20_9,VFR40_20_9,40,20,3332,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,40530,16622748
+EXT,VFR40_5_1,VFR40_5_1,40,5,2396,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,10510,1134829
+EXT,VFR40_5_10,VFR40_5_10,40,5,2348,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,10477,1113007
+EXT,VFR40_5_2,VFR40_5_2,40,5,2442,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,10730,1135658
+EXT,VFR40_5_3,VFR40_5_3,40,5,2174,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,9855,1034585
+EXT,VFR40_5_4,VFR40_5_4,40,5,2149,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,9723,1048175
+EXT,VFR40_5_5,VFR40_5_5,40,5,2247,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,10342,1073549
+EXT,VFR40_5_6,VFR40_5_6,40,5,2154,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,9584,1026399
+EXT,VFR40_5_7,VFR40_5_7,40,5,2207,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,10076,1049221
+EXT,VFR40_5_8,VFR40_5_8,40,5,2414,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,10705,1157939
+EXT,VFR40_5_9,VFR40_5_9,40,5,2305,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,10330,1114610
+EXT,VFR50_10_1,VFR50_10_1,50,10,2912,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,24410,6343289
+EXT,VFR50_10_10,VFR50_10_10,50,10,3050,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,25042,6403602
+EXT,VFR50_10_2,VFR50_10_2,50,10,3027,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,24205,6205730
+EXT,VFR50_10_3,VFR50_10_3,50,10,3002,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,24466,6569472
+EXT,VFR50_10_4,VFR50_10_4,50,10,2997,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,25278,6550722
+EXT,VFR50_10_5,VFR50_10_5,50,10,3250,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,26021,6723570
+EXT,VFR50_10_6,VFR50_10_6,50,10,3149,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,24782,6363279
+EXT,VFR50_10_7,VFR50_10_7,50,10,2835,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,23647,6023904
+EXT,VFR50_10_8,VFR50_10_8,50,10,3055,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,25678,6532080
+EXT,VFR50_10_9,VFR50_10_9,50,10,2999,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,24720,6306190
+EXT,VFR50_20_1,VFR50_20_1,50,20,3677,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,49263,25063735
+EXT,VFR50_20_10,VFR50_20_10,50,20,3756,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,50468,25037038
+EXT,VFR50_20_2,VFR50_20_2,50,20,3698,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,49291,25004966
+EXT,VFR50_20_3,VFR50_20_3,50,20,3772,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,50327,24647149
+EXT,VFR50_20_4,VFR50_20_4,50,20,3700,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,49819,24970238
+EXT,VFR50_20_5,VFR50_20_5,50,20,3622,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,47908,23911294
+EXT,VFR50_20_6,VFR50_20_6,50,20,3779,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,50932,26130972
+EXT,VFR50_20_7,VFR50_20_7,50,20,3689,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,49551,25081045
+EXT,VFR50_20_8,VFR50_20_8,50,20,3770,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,49620,25669998
+EXT,VFR50_20_9,VFR50_20_9,50,20,3797,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,50936,26022146
+EXT,VFR60_10_1,VFR60_10_1,60,10,3415,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,29905,9296885
+EXT,VFR60_10_10,VFR60_10_10,60,10,3486,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,30036,9414440
+EXT,VFR60_10_2,VFR60_10_2,60,10,3640,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,30594,9452759
+EXT,VFR60_10_3,VFR60_10_3,60,10,3415,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,29285,9098680
+EXT,VFR60_10_4,VFR60_10_4,60,10,3448,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,29346,9075147
+EXT,VFR60_10_5,VFR60_10_5,60,10,3496,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,30651,9566475
+EXT,VFR60_10_6,VFR60_10_6,60,10,3586,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,30831,9279174
+EXT,VFR60_10_7,VFR60_10_7,60,10,3644,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,31148,9336335
+EXT,VFR60_10_8,VFR60_10_8,60,10,3552,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,29460,8983711
+EXT,VFR60_10_9,VFR60_10_9,60,10,3677,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,29805,9145429
+EXT,VFR60_15_1,VFR60_15_1,60,15,3926,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,45669,20890885
+EXT,VFR60_15_10,VFR60_15_10,60,15,3882,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,45558,20846404
+EXT,VFR60_15_2,VFR60_15_2,60,15,3865,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,44756,20254633
+EXT,VFR60_15_3,VFR60_15_3,60,15,3859,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,45850,20705308
+EXT,VFR60_15_4,VFR60_15_4,60,15,3692,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,43025,19955776
+EXT,VFR60_15_5,VFR60_15_5,60,15,3858,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,45293,20707261
+EXT,VFR60_15_6,VFR60_15_6,60,15,3868,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,46562,21467964
+EXT,VFR60_15_7,VFR60_15_7,60,15,3791,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,44575,20347203
+EXT,VFR60_15_8,VFR60_15_8,60,15,3727,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,43740,19738100
+EXT,VFR60_15_9,VFR60_15_9,60,15,3784,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,44032,19891991
+EXT,VFR60_20_10,VFR60_20_10,60,20,4173,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,59365,35845296
+EXT,VFR60_20_6,VFR60_20_6,60,20,4173,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,59555,36130039
+EXT,VFR60_20_7,VFR60_20_7,60,20,4245,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,60390,36299478
+EXT,VFR60_20_8,VFR60_20_8,60,20,4166,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,59314,36566813
+EXT,VFR60_20_9,VFR60_20_9,60,20,4192,0,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,59483,36085623
+EXT,VFR60_5_1,VFR60_5_1,60,5,3350,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,15417,2428874
+EXT,VFR60_5_10,VFR60_5_10,60,5,3663,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,15082,2383853
+EXT,VFR60_5_2,VFR60_5_2,60,5,3054,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,14362,2254620
+EXT,VFR60_5_3,VFR60_5_3,60,5,3214,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,14970,2351366
+EXT,VFR60_5_4,VFR60_5_4,60,5,3266,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,15396,2464405
+EXT,VFR60_5_5,VFR60_5_5,60,5,3197,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,14900,2339608
+EXT,VFR60_5_6,VFR60_5_6,60,5,3107,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,14555,2243801
+EXT,VFR60_5_7,VFR60_5_7,60,5,3315,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,15508,2462489
+EXT,VFR60_5_8,VFR60_5_8,60,5,3438,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,15752,2411835
+EXT,VFR60_5_9,VFR60_5_9,60,5,3121,1,,"Brunner (2026) best-known solutions v10, Zenodo record 20529962",,Vallada et al. 2015 UB file,14679,2326109

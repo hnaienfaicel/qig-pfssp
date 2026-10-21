@@ -1,5 +1,5 @@
 """Run the preregistered Q-IG experiments. Usage: python experiments/run.py PHASE SHARD NSHARDS
-PHASE: tune | tune2 | tune3 (TUNE+, 5 runs) | test | hard (30 runs, arms.json) | test_cpi2 | hard_cpi2 (robustness)."""
+PHASE: tune | tune2 | tune3 (TUNE+, 5 runs) | test | hard | ext (30 runs, arms.json) | test_cpi2 | hard_cpi2 (robustness)."""
 import os, sys, json, time, random, pandas as pd
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from qig.instances import load, SETS
@@ -27,6 +27,7 @@ def plan(phase):
     arms = json.load(open(os.path.join(HERE, "arms.json")))
     if phase.endswith("_cpi2"):                       # robustness: 2 oracle calls per Grover iteration, same settings
         arms = [dict(a, nom=a["nom"] + " cpi2", cpi=2) for a in arms if a["nom"].startswith("Q-IG")]
+    if phase == "ext": return arms, SETS["EXT"], 30, 41            # replication set (Amendment 4)
     return arms, SETS["TEST" if phase.startswith("test") else "HARD"], 30, 41
 
 if __name__ == "__main__":

@@ -5,11 +5,15 @@ marked code with probability sin^2((2k+1) theta), sin(theta) = sqrt(M/N), unifor
 otherwise a uniformly random unmarked code. BBHT (Boyer, Brassard, Hoyer & Tapp 1998) handles unknown M by drawing k
 uniformly in [0, m) and growing m by lambda = 1.2. Each round costs `cpi` oracle calls per Grover iteration (1 by
 default, the usual convention; 2 counts the oracle and its uncomputation separately) plus one classical evaluation to
-verify the measured candidate."""
+verify the measured candidate.
+
+Noise model (exploratory, Amendment 4): with eps > 0 the k iterations of a round stay coherent with probability
+(1 - eps)^k; otherwise the register is fully decohered and the measurement returns a uniformly random code (the k
+calls are still charged). eps = 0 reproduces the noiseless emulation exactly (no extra random draw)."""
 import math, numpy as np
 from .flowshop import all_insertions, shift_move
 
-def quantum_argmin(c, rng, cq, cpi=1):
+def quantum_argmin(c, rng, cq, cpi=1, eps=0.0):
     """Durr & Hoyer (1996) quantum minimum finding over the values c[0..n-1], on a register of 2^ceil(log2 n) codes.
     Each BBHT search below the current threshold stops after cq*sqrt(N) effort without success.
     Returns (index, value, charged calls)."""
@@ -20,7 +24,9 @@ def quantum_argmin(c, rng, cq, cpi=1):
         theta = math.asin(math.sqrt(M / Nreg)) if M else 0.0; mm, eff, found, seen = 1.0, 0, None, set()
         while eff <= cap:
             k = int(rng.integers(0, int(math.ceil(mm)))); charged += cpi * k; eff += k + 1
-            if M and rng.random() < math.sin((2 * k + 1) * theta) ** 2:
+            pm = math.sin((2 * k + 1) * theta) ** 2
+            if eps > 0 and k > 0 and rng.random() >= (1 - eps) ** k: pm = M / Nreg     # decohered: uniform code
+            if M and rng.random() < pm:
                 found = int(marked[int(rng.integers(M))]); charged += 1; break
             if rng.random() < (n - M) / (Nreg - M):                       # measured a valid but unmarked code
                 unm = np.flatnonzero(c >= cur); q = int(unm[int(rng.integers(unm.size))])
@@ -40,7 +46,7 @@ def random_argmin(c, rng, cq):
         if c[q] < c[best]: best, since = int(q), 0
     return best, int(c[best]), charged
 
-def insertion_descent(p, x, xc, rng, left, cq, twin, cpi=1):
+def insertion_descent(p, x, xc, rng, left, cq, twin, cpi=1, eps=0.0, rec=None):
     """Descent over the whole insertion neighbourhood. Each step searches for an improving move with BBHT
     (twin=False) or with uniform draws without replacement (twin=True, same output law). The move register uses
     i on w_i bits, a direction bit and a distance on w_m bits; a local optimum is declared after cq*sqrt(N) effort
@@ -59,7 +65,9 @@ def insertion_descent(p, x, xc, rng, left, cq, twin, cpi=1):
             theta = math.asin(math.sqrt(M / Nreg)) if M else 0.0; mm = 1.0
             while eff <= cap and left[0] > 0:
                 k = int(rng.integers(0, int(math.ceil(mm)))); left[0] -= cpi * k; eff += k + 1
-                if M and rng.random() < math.sin((2 * k + 1) * theta) ** 2:
+                pm = math.sin((2 * k + 1) * theta) ** 2
+                if eps > 0 and k > 0 and rng.random() >= (1 - eps) ** k: pm = M / Nreg  # decohered: uniform code
+                if M and rng.random() < pm:
                     found = divmod(int(marked[int(rng.integers(M))]), n); left[0] -= 1; break
                 if rng.random() < (Nv - M) / (Nreg - M):
                     while True:
@@ -75,4 +83,5 @@ def insertion_descent(p, x, xc, rng, left, cq, twin, cpi=1):
                 if mask[ij]: found = ij; break
         if found is None: return x, xc
         i, j = found; xc = int(C[i, j]); x = shift_move(x, i, j)
+        if rec is not None: rec(xc)
     return x, xc

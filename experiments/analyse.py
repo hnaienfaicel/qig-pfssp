@@ -1,6 +1,7 @@
 """Preregistered analysis (preregistration/preregistration_qig_fr.md). Unit = instance; paired Wilcoxon signed-rank
 test; bootstrap 95% CI of the mean paired difference (10,000 resamples); Holm correction within each family.
-Usage: python experiments/analyse.py   (reads results/test_runs.csv, results/hard_runs.csv and results/raw/*_cpi2_*.csv)
+Usage: python experiments/analyse.py   (reads results/test_runs.csv, results/hard_runs.csv, results/ext_runs.csv and results/raw/*_cpi2_*.csv;
+EXT = replication set of Amendment 4)
 Gaps are recomputed against the best-known solutions in data/instances.csv (amendment of 20/10/2026, see the preregistration)."""
 import os, sys, glob, numpy as np, pandas as pd
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
@@ -22,7 +23,7 @@ FAM = {"primary": [("H1 Q-IG-min - IG", "Q-IG-min", "IG"), ("H2 Q-IG-G - IG-R", 
        "robustness_cpi2": [("Q-IG-min cpi2 - IG-Rmin", "Q-IG-min cpi2", "IG-Rmin"), ("Q-IG-min cpi2 - IG", "Q-IG-min cpi2", "IG"),
                            ("Q-IG-G cpi2 - IG-RR", "Q-IG-G cpi2", "IG-RR"), ("Q-IG-G cpi2 - IG", "Q-IG-G cpi2", "IG")]}
 out, levels = [], []
-for ph, lab in (("test", "TEST"), ("hard", "HARD")):
+for ph, lab in (("test", "TEST"), ("hard", "HARD"), ("ext", "EXT")):
     A = pd.read_csv(os.path.join(R, f"{ph}_runs.csv"))
     raw = glob.glob(os.path.join(R, "raw", f"{ph}_cpi2_*.csv"))
     if raw: A = pd.concat([A] + [pd.read_csv(f) for f in raw], ignore_index=True).drop_duplicates(["Arm", "Instance", "Run"])
@@ -35,9 +36,10 @@ for ph, lab in (("test", "TEST"), ("hard", "HARD")):
             for c_, a, b in pairs:
                 if a in X and b in X: out.append(dict(Family=fam, Set=lab, Metric=met, **cmp(c_, X[a], X[b])))
 Rt = pd.DataFrame(out)
-for fam in FAM:
-    for met in ("best30", "mean30"):
-        s = (Rt.Family == fam) & (Rt.Metric == met)
-        if s.any(): Rt.loc[s, "p_Holm"] = holm(Rt.loc[s, "p"].values)
+for fam in FAM:                                         # Holm within each family; the preregistered families span TEST and
+    for met in ("best30", "mean30"):                    # HARD, and the EXT replication (Amendment 4) forms its own families
+        for grp in (("TEST", "HARD"), ("EXT",)):
+            s = (Rt.Family == fam) & (Rt.Metric == met) & Rt.Set.isin(grp)
+            if s.any(): Rt.loc[s, "p_Holm"] = holm(Rt.loc[s, "p"].values)
 L = pd.concat(levels, axis=1); L.to_csv(os.path.join(R, "levels.csv")); Rt.to_csv(os.path.join(R, "tests.csv"), index=False)
 print(L.round(3).to_string()); print(Rt[Rt.Metric == "best30"].round(4).to_string(index=False))

@@ -32,32 +32,33 @@ fig.savefig(os.path.join(HERE, "fig_validation.pdf"), bbox_inches="tight"); fig.
 arms = [("IG", "IG (full scan)", REF), ("IG-Rmin", "IG-Rmin (twin)", TW), ("Q-IG-min", "Q-IG-min", FOC),
         ("IG-RR", "IG-RR (twin)", TW), ("IG-R", "IG-R (twin)", TW), ("Q-IG-G", "Q-IG-G", FOC)]
 plt.rcParams.update({"xtick.labelsize": 7, "ytick.labelsize": 7})
-fig = plt.figure(figsize=(6.0, 5.4)); gs = fig.add_gridspec(2, 2, height_ratios=[1, 1.15], hspace=0.6, wspace=0.06)
-a0 = fig.add_subplot(gs[0, 0]); a1 = fig.add_subplot(gs[0, 1], sharey=a0); a2 = fig.add_subplot(gs[1, :])
-for ax, ph, lab, n, step in ((a0, "test", "TEST", 100, 0.2), (a1, "hard", "HARD", 40, 0.5)):
+fig = plt.figure(figsize=(6.6, 5.6)); gs = fig.add_gridspec(2, 3, height_ratios=[1, 1.15], hspace=0.6, wspace=0.16)
+a0 = fig.add_subplot(gs[0, 0]); a1 = fig.add_subplot(gs[0, 1], sharey=a0); a3 = fig.add_subplot(gs[0, 2], sharey=a0); a2 = fig.add_subplot(gs[1, :])
+for ax, ph, lab, n, step in ((a0, "test", "TEST", 100, 0.2), (a1, "hard", "HARD", 40, 0.5), (a3, "ext", "EXT", 190, 0.2)):
     D = gap_vs_bks(pd.read_csv(os.path.join(R, f"{ph}_runs.csv"))); B = D.groupby(["Arm", "Instance"]).Gap.min().unstack(0); assert B.shape[0] == n
     for k, (a, l, col) in enumerate(arms):
         mu = B[a].mean(); lo, hi = boot(B[a].values)
         ax.errorbar(mu, k, xerr=[[mu - lo], [hi - mu]], fmt="o", color=col, ecolor=col, ms=5, capsize=2, elinewidth=1.2, mfc=col if col != TW else "white", mew=1.2)
         if a in ("IG", "Q-IG-G"): ax.annotate(f"{mu:.2f}", (hi, k), xytext=(4, 0), textcoords="offset points", ha="left", va="center", fontsize=6, color=col)
-    ax.set_title(f"{lab} ({n} instances)"); ax.set_xlabel("Best-of-30 gap to best-known solution (%)"); ax.xaxis.set_major_locator(MultipleLocator(step)); ax.margins(x=0.08)
+    ax.set_title(f"{lab} ({n} instances)"); ax.set_xlabel("Best-of-30 gap to BKS (%)"); ax.xaxis.set_major_locator(MultipleLocator(step)); ax.margins(x=0.08)
+    lo_, hi_ = ax.get_xlim(); ax.set_xlim(lo_, hi_ + 0.12 * (hi_ - lo_))
 a0.set_yticks(range(6)); a0.set_yticklabels([l for _, l, _ in arms]); a0.invert_yaxis()
 for t, (_, _, col) in zip(a0.get_yticklabels(), arms): t.set_color(col if col != TW else "0.35")
-plt.setp(a1.get_yticklabels(), visible=False)
+plt.setp(a1.get_yticklabels(), visible=False); plt.setp(a3.get_yticklabels(), visible=False)
 T = pd.read_csv(os.path.join(R, "tests.csv")); T = T[T.Metric == "best30"]
 comps = [("H1b Q-IG-min - IG-Rmin", "H1b: Q-IG-min − IG-Rmin"), ("H1 Q-IG-min - IG", "H1: Q-IG-min − IG"),
          ("H2b Q-IG-G - IG-RR", "H2b: Q-IG-G − IG-RR"), ("H2 Q-IG-G - IG-R", "H2: Q-IG-G − IG-R"), ("H3 Q-IG-G - IG", "H3: Q-IG-G − IG")]
 for y, (c, l) in enumerate(comps):
-    for ens, mk, dy in (("TEST", "o", -0.17), ("HARD", "s", 0.17)):
+    for ens, mk, dy in (("TEST", "o", -0.24), ("HARD", "s", 0.0), ("EXT", "^", 0.24)):
         r = T[(T.Comparison == c) & (T.Set == ens)].iloc[0]
         a2.errorbar(r.Diff_pp, y + dy, xerr=[[r.Diff_pp - r.CI_low], [r.CI_high - r.Diff_pp]], fmt=mk, color=FOC, ecolor=FOC, ms=4.5, capsize=2, elinewidth=1.2,
-                    mfc=FOC if ens == "TEST" else "white", mew=1.2, label=ens if y == 0 else None)
+                    mfc=FOC if ens != "HARD" else "white", mew=1.2, label=ens if y == 0 else None)
 a2.axvline(0, color="0.35", lw=0.9); a2.set_yticks(range(len(comps))); a2.set_yticklabels([l for _, l in comps]); a2.invert_yaxis(); a2.xaxis.set_major_locator(MultipleLocator(0.2))
 a2.set_xlabel("Paired difference in best-of-30 gap (points, 95% CI); negative = quantum better")
-pmax = T[T.Family.isin(["primary", "secondary"])].p_Holm.max()
+pmax = T[T.Family.isin(["primary", "secondary"])].p_Holm.max()   # over TEST, HARD and EXT
 a2.set_title(f"Each quantum subroutine beats its twin at equal oracle calls (p_Holm \u2264 {pmax:.1e})")
 a2.legend(loc="upper left", frameon=False, handletextpad=0.3); a2.margins(x=0.05)
-letter(a0, "a"); letter(a1, "b"); letter(a2, "c")
+letter(a0, "a"); letter(a1, "b"); letter(a3, "c"); letter(a2, "d")
 fig.savefig(os.path.join(HERE, "fig_results.pdf"), bbox_inches="tight"); fig.savefig(os.path.join(HERE, "fig_results.png"), dpi=300, bbox_inches="tight")
 print("pmax", pmax)
 
@@ -88,3 +89,38 @@ b2.set_xlabel("Oracle calls per run (both arms)"); b2.set_ylabel("Paired differe
 b2.set_title("The quantum advantage persists")
 letter(b1, "a"); letter(b2, "b")
 fig.savefig(os.path.join(HERE, "fig_budget.pdf"), bbox_inches="tight"); fig.savefig(os.path.join(HERE, "fig_budget.png"), dpi=300, bbox_inches="tight")
+
+# ---------------------------------------------------------------- Fig.: noisy Grover (exploratory)
+if os.path.exists(os.path.join(R, "noise_levels.csv")):
+    NL = pd.read_csv(os.path.join(R, "noise_levels.csv")); EPSL = [0.0, 0.001, 0.01, 0.03, 0.1, 0.3]
+    fig, axs = plt.subplots(1, 2, figsize=(6.6, 2.7), gridspec_kw=dict(wspace=0.28))
+    for ax, s in zip(axs, ("TEST", "HARD")):
+        x = np.arange(len(EPSL))
+        for a, col, ls, mk, lab in (("Q-IG-G", FOC, "-", "o", "Q-IG-G"), ("Q-IG-min", "#7fa6d6", "--", "s", "Q-IG-min")):
+            v = NL[(NL.Set == s) & (NL.Arm == a)].set_index("Eps").best30.reindex(EPSL)
+            ax.plot(x, v.values, ls, marker=mk, color=col, lw=1.6 if a == "Q-IG-G" else 1.1, ms=4, label=lab)
+        for a, col, ls, lab in (("IG-RR", TW, "-", "IG-RR (twin of Q-IG-G)"), ("IG-Rmin", TW, ":", "IG-Rmin (twin of Q-IG-min)"), ("IG", REF, "-.", "IG (full scan)")):
+            ax.axhline(NL[(NL.Set == s) & (NL.Arm == a)].best30.iloc[0], color=col, ls=ls, lw=1.0, label=lab)
+        ax.set_xticks(x); ax.set_xticklabels(["0", "0.001", "0.01", "0.03", "0.1", "0.3"])
+        ax.set_xlabel("Probability \u03b5 that a Grover iteration is corrupted"); ax.set_title(f"{s} ({140 - 100 if s == 'HARD' else 100} instances)")
+    axs[0].set_ylabel("Best-of-30 gap to BKS (%)")
+    h, l = axs[0].get_legend_handles_labels(); fig.legend(h, l, frameon=False, fontsize=6, loc="lower center", ncol=5, bbox_to_anchor=(0.5, -0.1))
+    letter(axs[0], "a"); letter(axs[1], "b")
+    fig.savefig(os.path.join(HERE, "fig_noise.pdf"), bbox_inches="tight"); fig.savefig(os.path.join(HERE, "fig_noise.png"), dpi=300, bbox_inches="tight")
+
+# ---------------------------------------------------------------- Fig.: convergence curves (exploratory)
+if os.path.exists(os.path.join(R, "convergence.csv")):
+    CV = pd.read_csv(os.path.join(R, "convergence.csv"))
+    sty = {"IG": (REF, "-", "IG (full scan)", 1.2), "IG-Rmin": (TW, ":", "IG-Rmin (twin)", 1.0), "Q-IG-min": ("#7fa6d6", "--", "Q-IG-min", 1.2),
+           "IG-R": (TW, "--", "IG-R (twin)", 1.0), "IG-RR": (TW, "-", "IG-RR (twin)", 1.2), "Q-IG-G": (FOC, "-", "Q-IG-G", 2.0)}
+    fig, axs = plt.subplots(1, 2, figsize=(6.6, 2.8), gridspec_kw=dict(wspace=0.28))
+    for ax, s in zip(axs, ("TEST", "HARD")):
+        for a, (col, ls, lab, lw) in sty.items():
+            v = CV[(CV.Set == s) & (CV.Arm == a)].sort_values("calls")
+            ax.plot(v.calls, v.mean_gap, ls, color=col, lw=lw, label=lab, zorder=3 if a == "Q-IG-G" else 2)
+        ax.set_xscale("log"); ax.set_xticks([5000, 10000, 20000, 46080]); ax.set_xticklabels(["5k", "10k", "20k", "46k"])
+        ax.xaxis.set_minor_locator(matplotlib.ticker.NullLocator()); ax.set_xlabel("Oracle calls"); ax.set_title(f"{s}: mean best-so-far gap")
+    axs[0].set_ylabel("Mean gap to BKS (%)")
+    h, l = axs[0].get_legend_handles_labels(); fig.legend(h, l, frameon=False, fontsize=6, loc="lower center", ncol=6, bbox_to_anchor=(0.5, -0.1))
+    letter(axs[0], "a"); letter(axs[1], "b")
+    fig.savefig(os.path.join(HERE, "fig_convergence.pdf"), bbox_inches="tight"); fig.savefig(os.path.join(HERE, "fig_convergence.png"), dpi=300, bbox_inches="tight")

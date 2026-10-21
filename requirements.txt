@@ -6,3 +6,5 @@ matplotlib>=3.8
 # circuits/ only
 qiskit==2.5.2
 qiskit-aer==0.17.2
+# circuits/ft_estimate.py only
+qdk==1.33.1

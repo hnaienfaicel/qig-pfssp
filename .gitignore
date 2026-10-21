@@ -12,3 +12,6 @@ results/raw_long/*.done
 paper/
 figures/*.pdf
 figures/*.png
+results/raw_extra/
+results/raw/ext_*.csv
+results/raw/*.csv.done

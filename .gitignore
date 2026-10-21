@@ -15,3 +15,4 @@ figures/*.png
 results/raw_extra/
 results/raw/ext_*.csv
 results/raw/*.csv.done
+results/raw_amend5/

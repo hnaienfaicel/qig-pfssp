@@ -109,3 +109,12 @@ IG-RR choisit (2 ; 10), soit 1,371, au bord de ses deux axes. J'étends sa grill
   - Robustesse au bruit : Grover imparfait ; avec une probabilité (1 − ε)^k que les k itérations restent cohérentes, sinon la mesure est uniforme.
   - Courbes de convergence : meilleur makespan en fonction des appels, mêmes exécutions que TEST et HARD.
   - Estimation des ressources tolérantes aux fautes.
+
+## Amendement 5 (21 octobre 2026, 13:08 UTC, avant toute exécution de ces études)
+
+Quatre études **exploratoires** (hors confirmatoire, sans correction de Holm commune avec les familles H1–H3). Mêmes graines (1000 + 7919 r), même budget de base (46 080 appels), écart à la meilleure solution connue (Brunner 2026, v10). Script : `experiments/run_amend5.py`.
+
+- **Ablation 2×2.** Nouveau bras Q-IG-LS : construction par scan complet (comme IG et IG-R) et descente de Grover (BBHT, c_ls = 1, réglage repris de Q-IG-G, non re-réglé). Son jumeau est IG-R. TEST, HARD et EXT, 30 exécutions. Analyse : niveaux, différences appariées Q-IG-LS − IG-R et Q-IG-LS − IG (Wilcoxon apparié, IC bootstrap 95 %), décomposition du gain de Q-IG-G sur IG en part « descente » (Q-IG-LS − IG) et part « minimum quantique » (Q-IG-G − Q-IG-LS).
+- **Robustesse aux réglages.** TEST et HARD, 10 exécutions (r = 0–9). Grilles : Q-IG-G c_min ∈ {0,5 ; 1 ; 2 ; 3} × c_ls ∈ {0,5 ; 1 ; 2 ; 3} (16 réglages) ; IG-RR r_min ∈ {1 ; 2 ; 3 ; 4 ; 6} × c_ls ∈ {3 ; 6 ; 10 ; 15} (20 réglages, étendue au-delà du bord r_min = 3) ; Q-IG-min c_min ∈ {0,25 ; 0,5 ; 1 ; 2} ; IG-Rmin r_min ∈ {0,5 ; 1 ; 2 ; 3}. Les réglages retenus réutilisent les exécutions 0–9 de la campagne (déterministes). Critère principal : le **pire** réglage quantique contre le **meilleur** réglage du jumeau, choisi a posteriori sur les mêmes instances (choix favorable au jumeau), sur la moyenne par instance du meilleur des 10.
+- **Équivalence de budget.** Sur les 38 instances ouvertes de TEST et HARD (`results/raw_long/open_instances.txt`), 5 exécutions (r = 0–4), réglages retenus : IG à ×15, ×20, ×30 et ×50 ; IG-RR à ×5, ×7 et ×15 (×1, ×10 et ×100 existent déjà). On estime par interpolation en log du budget le facteur k* pour lequel le meilleur des 5 de IG (resp. IG-RR) égale celui de Q-IG-G à ×1, puis le temps maximal d'une itération de Grover qui donnerait un avantage en temps réel, comparé aux estimations tolérantes aux fautes.
+- **Tableaux par groupe.** Écarts (meilleur des 30, moyenne des 30) par groupe n × m et par bras sur TEST, HARD et EXT, à partir des exécutions existantes. Aucune nouvelle exécution.

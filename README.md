@@ -52,6 +52,24 @@ every checkpoint from 5,568 calls (`results/convergence.csv`, `results/convergen
 with probability (1−ε)^k, otherwise the measurement returns a uniformly random code), Q-IG-G still beats its complete twin up to ε = 0.1. The break-even point is about ε ≈ 0.18
 (TEST) and 0.21 (HARD). Q-IG-min is much less sensitive (`results/noise_levels.csv`, `results/noise_tests.csv`).
 
+**Ablation (exploratory, Amendment 5).** A fourth arm, Q-IG-LS, keeps IG's full-scan construction and uses the Grover
+descent. It carries 91–97% of the gain of Q-IG-G over IG and beats its twin IG-R on all three sets; adding the quantum
+minimum gives a further 0.03–0.05 points (`results/amend5_abl_*.csv`).
+
+**Sensitivity to the settings (exploratory, Amendment 5).** Over 16 settings of Q-IG-G and 20 of IG-RR (TEST and HARD,
+10 runs), every Q-IG-G setting beats every IG-RR setting; the worst Q-IG-G setting beats the best IG-RR setting by 0.158
+(TEST) and 0.400 (HARD) points. The smaller advantage of the quantum minimum alone depends on the settings
+(`results/amend5_grid_*.csv`).
+
+**Budget equivalence (exploratory, Amendment 5).** On the 38 open instances, IG needs k* = 15.6 times more calls
+(95% CI 13.2–18.8) and IG-RR 9.1 times more (7.1–12.0) to match Q-IG-G at 46,080 calls. With the measured classical time
+per evaluation (0.25–1.24 µs), a Grover iteration would have to take less than 4–19 µs to break even in wall-clock time,
+2×10^4 to 8×10^6 times less than the fault-tolerant estimates (`results/amend5_equiv*.csv`, `results/amend5_ig_timing.csv`).
+
+**Published annealing results (descriptive, Amendment 5).** On the 60 Taillard instances 20×5 to 50×20 of Farhani et al.
+(GECCO 2024 Companion, D-Wave Leap hybrid), their QUBO models reach mean gaps of 16–19%, against 4.0% for NEH, 1.37% for
+one IG run and 0.76% for one Q-IG-G run (`results/farhani2024_table23.csv`, `results/amend5_farhani_*.csv`).
+
 **Fault-tolerant cost (exploratory, Amendment 4).** Azure Quantum Resource Estimator, run locally with `qdk`. On a
 100×20 Taillard instance with the `qubit_gate_ns_e3` model and an error budget of 0.1 per Grover iteration, one
 iteration needs code distance 23, about 95.6 million physical qubits and 48 s. A run of 46,080 iterations would take
@@ -66,6 +84,7 @@ experiments/    run.py (all phases, sharded), analyse.py (statistics), arms.json
                 quantum_minimum_cost.py (cost and exactness of the quantum minimum),
                 run_long.py, run_record.py and analyse_long.py (exploratory larger-budget runs)
                 collect_ext.py (EXT replication), run_extra.py and analyse_extra.py (noise and convergence studies)
+                run_amend5.py, analyse_amend5.py and time_ig.py (ablation, settings grids, budget equivalence)
 circuits/       reversible oracle (oracle_makespan.py, grover_circuit.py), exhaustive oracle check (verify_oracle.py),
                 gate-level Born probabilities (grover_kscan.py), logical resource counts (resources.py),
                 fault-tolerant estimates (ft_estimate.py, Azure Quantum Resource Estimator through qdk)
@@ -75,7 +94,7 @@ results/        raw runs (test/hard/tune*, raw_long/, raw_record/), ext_runs.csv
                 noise_*.csv, trace_runs.csv, convergence*.csv, ft_resources.csv, circuit validation and resource tables
 figures/        make_figures.py and make_tables.py: every figure and table of the paper is generated from results/
                 (figures are written to figures/, LaTeX tables to paper/tables/; generated files are not versioned)
-preregistration/  preregistration with its four dated amendments (French original)
+preregistration/  preregistration with its five dated amendments (French original)
 ```
 
 ## Reproduce
@@ -92,6 +111,8 @@ python experiments/run_record.py results/raw_record 54 && python experiments/ana
 for s in $(seq 0 39); do python experiments/run_extra.py noise $s 40 results/raw_extra & done; wait   # then: trace
 python experiments/analyse_extra.py                  # -> noise_*.csv, trace_runs.csv, convergence*.csv
 pip install qdk && python circuits/ft_estimate.py     # -> results/ft_resources.csv
+for s in $(seq 0 43); do python experiments/run_amend5.py grid $s 44 results/raw_amend5 & done; wait   # also: abl, equiv
+python experiments/time_ig.py && python experiments/analyse_amend5.py && python figures/make_amend5.py
 python figures/make_figures.py && python figures/make_tables.py
 cd circuits && python verify_oracle.py && python grover_kscan.py n4 && python resources.py
 ```

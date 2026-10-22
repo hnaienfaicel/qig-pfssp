@@ -87,23 +87,35 @@ if os.path.exists(os.path.join(R, "amend5_equiv.csv")):
         need = (kk * tc).rename("need")
         inst = [i for i in ("tai20_5_0", "tai50_10_0", "tai100_20_0") if i in tc.index]
         xs = np.arange(len(inst))
-        DP = pd.read_csv(os.path.join(R, "oracle_depth.csv")).set_index("instance").depth_iteration * 1e-9   # noiseless machine, 1 ns per layer
-        for dx, model, col, lab in ((-0.27, "qubit_gate_ns_e3", "#7fa6d6", "superconducting-like (ns, $10^{-3}$)"), (0.0, "qubit_maj_ns_e4", FOC, "Majorana-like (ns, $10^{-4}$)")):
-            v = [FT[(FT.instance == i) & (FT.model == model)].runtime_s.iloc[0] for i in inst]
-            a2.bar(xs + dx, v, width=0.26, color=col, label=lab)
-        a2.bar(xs + 0.27, DP[inst].values, width=0.26, color="#b0b0b0", label="noiseless, 1 ns per layer")
-        a2.scatter(xs, need[inst].values, marker="_", s=300, color="#d62728", lw=2, zorder=3, label="break-even ($k^*$ classical calls)")
+        V2 = pd.read_csv(os.path.join(R, "oracle_v2_resources.csv")); V2 = V2[V2.variant == "v2"].set_index("instance")
+        F2 = pd.read_csv(os.path.join(R, "ft_v2_resources.csv")); F2 = F2[F2.variant == "v2"]
+        MODELS = ("qubit_gate_ns_e3", "qubit_gate_ns_e4", "qubit_maj_ns_e4")
+        def span(ax, x, lo, hi, mk, col, lab, mfc):
+            ax.plot([x, x], [lo, hi], color=col, lw=1.0, zorder=2); ax.plot([x, x], [lo, hi], mk, color=col, ms=4, mfc=mfc, ls="none", label=lab, zorder=3)
+        for k, i in enumerate(inst):
+            v1 = [FT[(FT.instance == i) & (FT.model == m)].runtime_s.iloc[0] for m in MODELS]
+            sq = [F2[(F2.instance == i) & (F2.model == m)].seq_runtime_s.iloc[0] for m in MODELS]
+            dl = [F2[(F2.instance == i) & (F2.model == m)].dl_runtime_s.iloc[0] for m in MODELS]
+            L = (lambda t: t) if k == 0 else (lambda t: "_" + t)
+            span(a2, k - 0.27, min(v1), max(v1), "^", "#9a9a9a", L("direct oracle, fault-tolerant"), "white")
+            span(a2, k - 0.09, min(sq), max(sq), "^", FOC, L("optimised oracle, fault-tolerant (sequential)"), FOC)
+            span(a2, k + 0.09, min(dl), max(dl), "v", FOC, L("optimised oracle, fault-tolerant (depth-limited)"), "white")
+            a2.plot([k + 0.27], [V2.loc[i, "noiseless_1ns_us"] * 1e-6], "o", color="black", ms=4, label=L("optimised oracle, noiseless, 1 ns per layer"), zorder=3)
+        for k, i in enumerate(inst): a2.plot([k - 0.38, k + 0.38], [need[i], need[i]], color="#d62728", lw=2, zorder=4, label="break-even ($k^*$ classical calls)" if k == 0 else "_")
         a2.set_yscale("log"); a2.set_xticks(xs); a2.set_xticklabels([i.replace("tai", "").replace("_0", "").replace("_", "\u00d7") for i in inst])
         a2.set_ylabel("Time per Grover iteration (s)"); a2.set_xlabel("Taillard instance size (n\u00d7m)")
-        a2.set_title("Required versus estimated iteration time"); a2.set_ylim(1e-6, 1e4)
+        a2.set_title("Required versus estimated iteration time"); a2.set_ylim(1e-6, 1e9); a2.set_xlim(-0.6, len(inst) - 0.4); a2.set_yticks([1e-6, 1e-4, 1e-2, 1, 1e2]); a2.set_yticklabels(["1 \u00b5s", "100 \u00b5s", "10 ms", "1 s", "100 s"])
         a2.legend(frameon=False, fontsize=6, loc="upper left", ncol=1)
         letter(a2, "b")
         def sci(v):
             m, e = f"{v:.1e}".split("e"); return f"{m}\\times10^{{{int(e)}}}"
+        V2all = pd.read_csv(os.path.join(R, "oracle_v2_resources.csv")); V2all = V2all[V2all.variant == "v2"].set_index("instance")
+        F2all = pd.read_csv(os.path.join(R, "ft_v2_resources.csv")); F2all = F2all[F2all.variant == "v2"]
         rows = []
         for i in sorted(tc.index, key=lambda s: (int(s.split("_")[0][3:]), int(s.split("_")[1]))):
-            e3 = FT[(FT.instance == i) & (FT.model == "qubit_gate_ns_e3")].runtime_s.iloc[0]; e4 = FT[(FT.instance == i) & (FT.model == "qubit_maj_ns_e4")].runtime_s.iloc[0]
-            rows.append(" & ".join([i.replace("_", "\\_"), f"{tc[i] * 1e6:.2f}", f"{need[i] * 1e6:.1f}", f"{e4:.2f}--{e3:.2f}", f"${sci(e4 / need[i])}$--${sci(e3 / need[i])}$", f"{DP[i] * 1e3:.2f}", f"{DP[i] / need[i]:.0f}"]) + r" \\")
+            f = F2all[F2all.instance == i]; sq = f.seq_runtime_s; dl = f.dl_runtime_s; nl = V2all.loc[i, "noiseless_1ns_us"] * 1e-6
+            rows.append(" & ".join([i.replace("_", "\\_"), f"{tc[i] * 1e6:.2f}", f"{need[i] * 1e6:.1f}", f"{sq.min():.2f}--{sq.max():.2f}", f"{dl.min() * 1e3:.1f}--{dl.max() * 1e3:.1f}",
+                                    f"{dl.min() / need[i]:,.0f}--{dl.max() / need[i]:,.0f}".replace(",", "\\,"), f"{nl * 1e6:.1f}", f"{nl / need[i]:.2f}"]) + r" \\")
         open(os.path.join(OUT, "equiv_hw.tex"), "w").write("\n".join(rows) + "\n")
     fig.savefig(os.path.join(HERE, "fig_equiv.pdf"), bbox_inches="tight"); fig.savefig(os.path.join(HERE, "fig_equiv.png"), dpi=300, bbox_inches="tight")
 

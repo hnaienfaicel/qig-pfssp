@@ -44,7 +44,7 @@ open(os.path.join(OUT, "per_n.tex"), "w").write("\n".join(rows[:-1]) + "\n")
 Q = pd.read_csv(os.path.join(R, "oracle_resources_taillard.csv")).merge(pd.read_csv(os.path.join(R, "oracle_depth.csv"))[["n", "m", "depth_oracle"]], on=["n", "m"], how="left")
 fmt = lambda v: f"{v/1e6:.2f}\\,M" if v >= 1e6 else (f"{v/1e3:.0f}\\,k" if v >= 1e4 else f"{int(v):,}".replace(",", "\\,"))
 rows = [" & ".join([f"{int(r.n)}$\\times${int(r.m)}", str(int(r.b)), f"{int(r.qubits):,}".replace(",", "\\,"), fmt(r.cx), fmt(r.ccx), fmt(r.cswap), fmt(r.cx_equiv_oracle), fmt(r.depth_oracle), str(int(r.k_opt_M1)), fmt(r.cx_equiv_search_M1).replace("M", "M") if r.cx_equiv_search_M1 < 1e9 else f"{r.cx_equiv_search_M1/1e9:.2f}\\,G"]) + r" \\" for r in Q.itertuples()]
-open(os.path.join(OUT, "resources.tex"), "w").write("\n".join(rows) + "\n")
+open(os.path.join(OUT, "resources_v1.tex"), "w").write("\n".join(rows) + "\n")
 # insertion cost / quality
 C = pd.read_csv(os.path.join(R, "insertion_cost_quality.csv"))
 nm = {"minimum quantique cq=0,5": "quantum minimum ($c_{\\min}=0.5$)", "jumeau par tirages cq=1": "random-search twin ($c=1$)", "balayage classique": "full scan"}
@@ -105,4 +105,4 @@ if os.path.exists(os.path.join(R, "ft_resources.csv")):
             rows.append(" & ".join([lab, mname[model], str(int(r.code_distance)), f"{r.physical_qubits/1e6:.1f}\\,M", dur(r.runtime_s), dur(r.run_runtime_h * 3600),
                                     (f"{ig:.2f}\\,s" if k == 0 else "")]) + r" \\")
         rows.append(r"\midrule")
-    open(os.path.join(OUT, "ft.tex"), "w").write("\n".join(rows[:-1]) + "\n")
+    open(os.path.join(OUT, "ft_v1.tex"), "w").write("\n".join(rows[:-1]) + "\n")

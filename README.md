@@ -75,6 +75,9 @@ one IG run and 0.76% for one Q-IG-G run (`results/farhani2024_table23.csv`, `res
 iteration needs code distance 23, about 95.6 million physical qubits and 48 s. A run of 46,080 iterations would take
 about 26 days, against a median of 0.66 s for a classical IG run. The query advantage is therefore not a wall-clock
 advantage on foreseeable hardware (`results/ft_resources.csv`).
+With the optimised oracle v2 (`circuits/oracle_v2.py`), one iteration at 100×20 needs 157,445 Toffoli gates instead of
+1.74 million, 16–70 million physical qubits and 2.1–5.3 s (sequential estimate) or 30–77 ms (estimate limited by the
+Toffoli depth), i.e. 23 minutes to 3 days per run. The conclusion is unchanged (`results/ft_v2_resources.csv`).
 
 ## Repository layout
 
@@ -87,6 +90,8 @@ experiments/    run.py (all phases, sharded), analyse.py (statistics), arms.json
                 run_amend5.py, analyse_amend5.py and time_ig.py (ablation, settings grids, budget equivalence)
 circuits/       reversible oracle (oracle_makespan.py, grover_circuit.py), exhaustive oracle check (verify_oracle.py),
                 gate-level Born probabilities (grover_kscan.py), logical resource counts (resources.py), circuit depth (depth.py),
+                optimised oracle v2 (oracle_v2.py, count_v2.py, ft_v2.py, profile_v1.py, sparse_grover_check.py,
+                grover_check_v2.py; design and validation in ORACLE_V2_METHODS.md),
                 fault-tolerant estimates (ft_estimate.py, Azure Quantum Resource Estimator through qdk)
 data/           the 350 instances used (Taillard 1993; Vallada, Ruiz & Framinan 2015), instances.csv (sets, best-known
                 solutions, original bounds) and bks/ (best-known solutions with schedules, Brunner 2026, CC BY 4.0)
@@ -94,6 +99,7 @@ results/        raw runs (test/hard/tune*, raw_long/, raw_record/), ext_runs.csv
                 noise_*.csv, trace_runs.csv, convergence*.csv, ft_resources.csv, circuit validation and resource tables
 figures/        make_figures.py and make_tables.py: every figure and table of the paper is generated from results/
                 (figures are written to figures/, LaTeX tables to paper/tables/; generated files are not versioned)
+tests/          exhaustive basis-state tests of the optimised oracle (test_oracle_v2.py) and closed-form gate counts
 preregistration/  preregistration with its five dated amendments (French original)
 ```
 
@@ -112,9 +118,10 @@ for s in $(seq 0 39); do python experiments/run_extra.py noise $s 40 results/raw
 python experiments/analyse_extra.py                  # -> noise_*.csv, trace_runs.csv, convergence*.csv
 pip install qdk && python circuits/ft_estimate.py     # -> results/ft_resources.csv
 python circuits/depth.py                             # -> results/oracle_depth.csv (circuit depth, noiseless-machine bound)
+python circuits/count_v2.py && python circuits/ft_v2.py && python tests/test_oracle_v2.py   # optimised oracle v2
 for s in $(seq 0 43); do python experiments/run_amend5.py grid $s 44 results/raw_amend5 & done; wait   # also: abl, equiv
 python experiments/time_ig.py && python experiments/analyse_amend5.py && python figures/make_amend5.py
-python figures/make_figures.py && python figures/make_tables.py
+python figures/make_figures.py && python figures/make_tables.py && python figures/make_oracle_v2.py
 cd circuits && python verify_oracle.py && python grover_kscan.py n4 && python resources.py
 ```
 

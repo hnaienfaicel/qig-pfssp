@@ -87,9 +87,11 @@ if os.path.exists(os.path.join(R, "amend5_equiv.csv")):
         need = (kk * tc).rename("need")
         inst = [i for i in ("tai20_5_0", "tai50_10_0", "tai100_20_0") if i in tc.index]
         xs = np.arange(len(inst))
-        for dx, model, col, lab in ((-0.18, "qubit_gate_ns_e3", "#7fa6d6", "superconducting-like (ns, $10^{-3}$)"), (0.18, "qubit_maj_ns_e4", FOC, "Majorana-like (ns, $10^{-4}$)")):
+        DP = pd.read_csv(os.path.join(R, "oracle_depth.csv")).set_index("instance").depth_iteration * 1e-9   # noiseless machine, 1 ns per layer
+        for dx, model, col, lab in ((-0.27, "qubit_gate_ns_e3", "#7fa6d6", "superconducting-like (ns, $10^{-3}$)"), (0.0, "qubit_maj_ns_e4", FOC, "Majorana-like (ns, $10^{-4}$)")):
             v = [FT[(FT.instance == i) & (FT.model == model)].runtime_s.iloc[0] for i in inst]
-            a2.bar(xs + dx, v, width=0.34, color=col, label=lab)
+            a2.bar(xs + dx, v, width=0.26, color=col, label=lab)
+        a2.bar(xs + 0.27, DP[inst].values, width=0.26, color="#b0b0b0", label="noiseless, 1 ns per layer")
         a2.scatter(xs, need[inst].values, marker="_", s=300, color="#d62728", lw=2, zorder=3, label="break-even ($k^*$ classical calls)")
         a2.set_yscale("log"); a2.set_xticks(xs); a2.set_xticklabels([i.replace("tai", "").replace("_0", "").replace("_", "\u00d7") for i in inst])
         a2.set_ylabel("Time per Grover iteration (s)"); a2.set_xlabel("Taillard instance size (n\u00d7m)")
@@ -101,7 +103,7 @@ if os.path.exists(os.path.join(R, "amend5_equiv.csv")):
         rows = []
         for i in sorted(tc.index, key=lambda s: (int(s.split("_")[0][3:]), int(s.split("_")[1]))):
             e3 = FT[(FT.instance == i) & (FT.model == "qubit_gate_ns_e3")].runtime_s.iloc[0]; e4 = FT[(FT.instance == i) & (FT.model == "qubit_maj_ns_e4")].runtime_s.iloc[0]
-            rows.append(" & ".join([i.replace("_", "\\_"), f"{tc[i] * 1e6:.2f}", f"{need[i] * 1e6:.1f}", f"{e4:.2f}--{e3:.2f}", f"${sci(e4 / need[i])}$--${sci(e3 / need[i])}$"]) + r" \\")
+            rows.append(" & ".join([i.replace("_", "\\_"), f"{tc[i] * 1e6:.2f}", f"{need[i] * 1e6:.1f}", f"{e4:.2f}--{e3:.2f}", f"${sci(e4 / need[i])}$--${sci(e3 / need[i])}$", f"{DP[i] * 1e3:.2f}", f"{DP[i] / need[i]:.0f}"]) + r" \\")
         open(os.path.join(OUT, "equiv_hw.tex"), "w").write("\n".join(rows) + "\n")
     fig.savefig(os.path.join(HERE, "fig_equiv.pdf"), bbox_inches="tight"); fig.savefig(os.path.join(HERE, "fig_equiv.png"), dpi=300, bbox_inches="tight")
 

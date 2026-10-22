@@ -86,7 +86,7 @@ experiments/    run.py (all phases, sharded), analyse.py (statistics), arms.json
                 collect_ext.py (EXT replication), run_extra.py and analyse_extra.py (noise and convergence studies)
                 run_amend5.py, analyse_amend5.py and time_ig.py (ablation, settings grids, budget equivalence)
 circuits/       reversible oracle (oracle_makespan.py, grover_circuit.py), exhaustive oracle check (verify_oracle.py),
-                gate-level Born probabilities (grover_kscan.py), logical resource counts (resources.py),
+                gate-level Born probabilities (grover_kscan.py), logical resource counts (resources.py), circuit depth (depth.py),
                 fault-tolerant estimates (ft_estimate.py, Azure Quantum Resource Estimator through qdk)
 data/           the 350 instances used (Taillard 1993; Vallada, Ruiz & Framinan 2015), instances.csv (sets, best-known
                 solutions, original bounds) and bks/ (best-known solutions with schedules, Brunner 2026, CC BY 4.0)
@@ -111,6 +111,7 @@ python experiments/run_record.py results/raw_record 54 && python experiments/ana
 for s in $(seq 0 39); do python experiments/run_extra.py noise $s 40 results/raw_extra & done; wait   # then: trace
 python experiments/analyse_extra.py                  # -> noise_*.csv, trace_runs.csv, convergence*.csv
 pip install qdk && python circuits/ft_estimate.py     # -> results/ft_resources.csv
+python circuits/depth.py                             # -> results/oracle_depth.csv (circuit depth, noiseless-machine bound)
 for s in $(seq 0 43); do python experiments/run_amend5.py grid $s 44 results/raw_amend5 & done; wait   # also: abl, equiv
 python experiments/time_ig.py && python experiments/analyse_amend5.py && python figures/make_amend5.py
 python figures/make_figures.py && python figures/make_tables.py

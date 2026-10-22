@@ -93,18 +93,16 @@ if os.path.exists(os.path.join(R, "amend5_equiv.csv")):
         def span(ax, x, lo, hi, mk, col, lab, mfc):
             ax.plot([x, x], [lo, hi], color=col, lw=1.0, zorder=2); ax.plot([x, x], [lo, hi], mk, color=col, ms=4, mfc=mfc, ls="none", label=lab, zorder=3)
         for k, i in enumerate(inst):
-            v1 = [FT[(FT.instance == i) & (FT.model == m)].runtime_s.iloc[0] for m in MODELS]
             sq = [F2[(F2.instance == i) & (F2.model == m)].seq_runtime_s.iloc[0] for m in MODELS]
             dl = [F2[(F2.instance == i) & (F2.model == m)].dl_runtime_s.iloc[0] for m in MODELS]
             L = (lambda t: t) if k == 0 else (lambda t: "_" + t)
-            span(a2, k - 0.27, min(v1), max(v1), "^", "#9a9a9a", L("direct oracle, fault-tolerant"), "white")
-            span(a2, k - 0.09, min(sq), max(sq), "^", FOC, L("optimised oracle, fault-tolerant (sequential)"), FOC)
-            span(a2, k + 0.09, min(dl), max(dl), "v", FOC, L("optimised oracle, fault-tolerant (depth-limited)"), "white")
-            a2.plot([k + 0.27], [V2.loc[i, "noiseless_1ns_us"] * 1e-6], "o", color="black", ms=4, label=L("optimised oracle, noiseless, 1 ns per layer"), zorder=3)
-        for k, i in enumerate(inst): a2.plot([k - 0.38, k + 0.38], [need[i], need[i]], color="#d62728", lw=2, zorder=4, label="break-even ($k^*$ classical calls)" if k == 0 else "_")
+            span(a2, k - 0.2, min(sq), max(sq), "^", FOC, L("fault-tolerant, sequential"), FOC)
+            span(a2, k, min(dl), max(dl), "v", FOC, L("fault-tolerant, depth-limited"), "white")
+            a2.plot([k + 0.2], [V2.loc[i, "noiseless_1ns_us"] * 1e-6], "o", color="black", ms=4, label=L("noiseless, 1 ns per layer"), zorder=3)
+        for k, i in enumerate(inst): a2.plot([k - 0.34, k + 0.34], [need[i], need[i]], color="#d62728", lw=2, zorder=4, label="break-even ($k^*$ classical calls)" if k == 0 else "_")
         a2.set_yscale("log"); a2.set_xticks(xs); a2.set_xticklabels([i.replace("tai", "").replace("_0", "").replace("_", "\u00d7") for i in inst])
         a2.set_ylabel("Time per Grover iteration (s)"); a2.set_xlabel("Taillard instance size (n\u00d7m)")
-        a2.set_title("Required versus estimated iteration time"); a2.set_ylim(1e-6, 1e9); a2.set_xlim(-0.6, len(inst) - 0.4); a2.set_yticks([1e-6, 1e-4, 1e-2, 1, 1e2]); a2.set_yticklabels(["1 \u00b5s", "100 \u00b5s", "10 ms", "1 s", "100 s"])
+        a2.set_title("Required versus estimated iteration time"); a2.set_ylim(1e-6, 1e5); a2.set_xlim(-0.6, len(inst) - 0.4); a2.set_yticks([1e-6, 1e-4, 1e-2, 1]); a2.set_yticklabels(["1 \u00b5s", "100 \u00b5s", "10 ms", "1 s"])
         a2.legend(frameon=False, fontsize=6, loc="upper left", ncol=1)
         letter(a2, "b")
         def sci(v):
